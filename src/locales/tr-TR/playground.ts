@@ -126,7 +126,7 @@ export default {
   'playgorund.audio.voice.error':
     'Sesler kullanılamıyor. Model hâlâ başlatılıyor olabilir. Lütfen kısa bir süre bekledikten sonra yenileyin.',
   'playground.params.size.description':
-    'Üretilen görselin maksimum boyutu modelin dağıtım parametreleri tarafından kontrol edilir. <a href="https://github.com/gpustack/llama-box" target="_blank">Bu bağlantıya bakın</a>',
+    'Üretilen görselin maksimum boyutu modelin dağıtım parametreleri tarafından kontrol edilir. ',
   'playground.documents.verify.embedding': 'En az iki metin parçası ekleyin.',
   'playground.documents.verify.rerank': 'Dokümanlar boş olamaz.',
   'playground.image.guidance.tip':

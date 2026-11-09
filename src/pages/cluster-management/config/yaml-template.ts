@@ -100,10 +100,10 @@ export const kubernetesConfig = `# This is a template for worker_config.
 // `{}`), and a commented example parses to nothing.
 export const chartValuesTemplate = `# The chart's own values, merged over the ones the server derives;
 # only settings with no field above belong here. Top-level keys are
-# GPUStack's own, everything under \`gpustack-operator\` is the
+# 曙光算力调度平台's own, everything under \`gpustack-operator\` is the
 # operator chart's. Lists replace rather than extend.
 
-# debug: true  # verbose logging on the GPUStack workers
+# debug: true  # verbose logging on the 曙光算力调度平台 workers
 # clusterDomain: cluster.local  # when not the cluster default
 
 # Declare a component this cluster already runs, so this release

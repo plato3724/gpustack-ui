@@ -1,9 +1,10 @@
 import { GPUStackVersionAtom } from '@/atoms/user';
 import VersionInfo, { modalConfig } from '@/components/version-info';
 import { documentationPaths } from '@/constants/documentation';
+import { PRODUCT_NAME } from '@/constants/product';
 import { getDocumentationUrl } from '@/utils/documentation';
 import { useIntl } from '@umijs/max';
-import { Button, Divider, Modal, Typography } from 'antd';
+import { Button, Divider, Modal } from 'antd';
 import { createStyles } from 'antd-style';
 import { useAtomValue } from 'jotai';
 import styled from 'styled-components';
@@ -56,13 +57,7 @@ const Footer: React.FC = () => {
               <CompanyWrapper>
                 <span>&copy;</span>
                 <span> {new Date().getFullYear()}</span>
-                <Typography.Link
-                  href="https://gpustack.ai"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {intl.formatMessage({ id: 'settings.company' })}
-                </Typography.Link>
+                <span>{PRODUCT_NAME}</span>
               </CompanyWrapper>
               <Divider orientation="vertical" />
               <Button

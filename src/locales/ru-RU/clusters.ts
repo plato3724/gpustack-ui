@@ -92,7 +92,7 @@ export default {
   'clusters.addworker.detectWorkerAddress.tips':
     'По умолчанию используется IP Worker, если не указано иное.',
   'clusters.addworker.externalIP.tips':
-    'При работе в VPC или частной сети укажите внешний адрес Worker, доступный для GPUStack Server.',
+    'При работе в VPC или частной сети укажите внешний адрес Worker, доступный для 曙光算力调度平台 Server.',
   'clusters.addworker.enterWorkerIP': 'Введите IP Worker',
   'clusters.addworker.enterWorkerIP.error': 'Пожалуйста, введите IP Worker.',
   'clusters.addworker.enterWorkerAddress': 'Введите внешний адрес Worker',
@@ -123,11 +123,11 @@ export default {
     '{count} новый Worker был добавлен в кластер.',
   'clusters.addworker.message.success_multiple':
     '{count} новых Worker были добавлены в кластер.',
-  'clusters.create.serverUrl': 'URL GPUStack Server',
+  'clusters.create.serverUrl': 'URL 曙光算力调度平台 Server',
   'clusters.create.workerConfig': 'Конфигурация Worker',
   'clusters.chartValues.title': 'Значения чарта (YAML)',
   'clusters.chartValues.tip':
-    'Значения для Helm-чарта GPUStack: ключи должны точно совпадать с ключами чарта, а значения накладываются поверх значений, определённых сервером. Здесь можно задать настройки чарта и его подчартов, для которых выше нет отдельного поля, например отключить компонент, уже предоставляемый кластером. Как и в Helm, списки заменяются целиком, а не дополняются.',
+    'Значения для Helm-чарта 曙光算力调度平台: ключи должны точно совпадать с ключами чарта, а значения накладываются поверх значений, определённых сервером. Здесь можно задать настройки чарта и его подчартов, для которых выше нет отдельного поля, например отключить компонент, уже предоставляемый кластером. Как и в Helm, списки заменяются целиком, а не дополняются.',
   'clusters.chartValues.reapply.tip':
     'Сохранение кластера ничего не меняет в Kubernetes. Повторно выполните «Зарегистрировать кластер», получите манифест и примените его снова. Job внутри кластера сравнивает требуемую манифестом конфигурацию с фактически установленной в релизе и выполняет обновление только при наличии различий.',
   'clusters.chartValues.doc.chart': 'Значения чарта',
@@ -143,13 +143,13 @@ export default {
     'Вы изменили параметры, которые применяются при регистрации Worker. Чтобы изменения вступили в силу, повторно выполните команду регистрации в целевом кластере.',
   'clusters.addworker.containerName': 'Имя контейнера Worker',
   'clusters.addworker.containerName.tips': 'Укажите имя для контейнера Worker.',
-  'clusters.addworker.dataVolume': 'Том данных GPUStack',
+  'clusters.addworker.dataVolume': 'Том данных 曙光算力调度平台',
   'clusters.addworker.dataVolume.tips':
-    'Укажите путь для хранения данных GPUStack.',
+    'Укажите путь для хранения данных 曙光算力调度平台.',
   'clusters.table.ip.internal': 'Внутренний',
   'clusters.table.ip.external': 'Внешний',
   'clusters.form.serverUrl.tips':
-    'Если Worker не может напрямую получить доступ к GPUStack Server, укажите внешний URL службы GPUStack Server. Например: {example}',
+    'Если Worker не может напрямую получить доступ к 曙光算力调度平台 Server, укажите внешний URL службы 曙光算力调度平台 Server. Например: {example}',
   'clusters.form.setDefault': 'Установить по умолчанию',
   'clusters.form.setDefault.tips':
     'Использовать по умолчанию для развертывания.',
@@ -169,7 +169,7 @@ export default {
   'clusters.addworker.theadNotes-02':
     'T-Head PPU использует Container Device Interface (CDI) для подключения устройств; для генерации CDI должен быть доступен каталог <span class="bold-text">/var/run/cdi</span>.',
   'clusters.addworker.nvidiaNotes':
-    'Встроенные бэкенды инференса GPUStack требуют <span class="bold-text">CUDA 12.8+</span>. Убедитесь, что версия драйвера NVIDIA — <span class="bold-text">570</span> или новее.',
+    'Встроенные бэкенды инференса 曙光算力调度平台 требуют <span class="bold-text">CUDA 12.8+</span>. Убедитесь, что версия драйвера NVIDIA — <span class="bold-text">570</span> или новее.',
   'clusters.volume.title': 'Монтирование томов',
   'clusters.volume.name': 'Имя тома',
   'clusters.volume.mountPath': 'Путь в контейнере',
@@ -198,7 +198,7 @@ export default {
   'clusters.systemDefaultContainerRegistry.title':
     'Реестр контейнеров по умолчанию',
   'clusters.systemDefaultContainerRegistry.tip':
-    'Реестр по умолчанию для разрешения образов GPUStack в этом кластере. Если не задан, используется значение сервера по умолчанию.',
+    'Реестр по умолчанию для разрешения образов 曙光算力调度平台 в этом кластере. Если не задан, используется значение сервера по умолчанию.',
   'clusters.systemDefaultContainerRegistry.dockerHubUnreachable':
     'Экземпляры {provider} не имеют доступа к Docker Hub. Используйте зеркало или приватный реестр.',
   'clusters.k8sOptions.title': 'Параметры развёртывания Kubernetes',
@@ -212,7 +212,7 @@ export default {
     'Поле nodeSelector для Pod всех DaemonSet Worker. Запускать Worker могут только узлы с подходящими метками.',
   'clusters.operatorImage.title': 'Образ Operator',
   'clusters.operatorImage.tip':
-    'Переопределяет образ контейнера GPUStack Operator. Оставьте пустым, чтобы использовать значение сервера по умолчанию.',
+    'Переопределяет образ контейнера 曙光算力调度平台 Operator. Оставьте пустым, чтобы использовать значение сервера по умолчанию.',
   'clusters.namespace.title': 'Пространство имён',
   'clusters.namespace.tip':
     'Пространство имён Kubernetes, для которого формируются манифесты кластера. Оставьте пустым, чтобы использовать gpustack-system.',
@@ -383,7 +383,7 @@ export default {
   'clusters.topology.layer.name': 'Имя',
   'clusters.topology.advanced.hostKeys': 'Встроено, по имени Worker',
   'clusters.topology.advanced.locked':
-    'Собственный ключ GPUStack: сюда записываются значения из таблицы. Нельзя удалить или переместить.',
+    'Собственный ключ 曙光算力调度平台: сюда записываются значения из таблицы. Нельзя удалить или переместить.',
   'clusters.topology.advanced.suggestions': 'Обнаруженные ключи меток',
   'clusters.topology.advanced.suggestion':
     '{workers} Worker · {values} значений · похоже на {field}',

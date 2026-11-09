@@ -1,5 +1,5 @@
-import DefaultLogo from '@/assets/images/gpustack-logo.png';
 import LangSelect from '@/components/lang-select';
+import { PRODUCT_NAME } from '@/constants/product';
 import ThemeDropActions from '@/components/theme-toggle/theme-drop-actions';
 import useUserSettings from '@/hooks/use-user-settings';
 import Background from '@/pages/login/components/background';
@@ -122,11 +122,23 @@ export default function AccessLayout({
           }}
         >
           <Flex justify="center" style={{ marginBottom: 32 }}>
-            <img
-              src={logoUrl || DefaultLogo}
-              alt="GPUStack"
-              style={{ height: 36, maxWidth: '100%', objectFit: 'contain' }}
-            />
+            {logoUrl ? (
+              <img
+                src={logoUrl}
+                alt={PRODUCT_NAME}
+                style={{ height: 36, maxWidth: '100%', objectFit: 'contain' }}
+              />
+            ) : (
+              <span
+                style={{
+                  fontSize: 20,
+                  fontWeight: 600,
+                  lineHeight: '36px'
+                }}
+              >
+                {PRODUCT_NAME}
+              </span>
+            )}
           </Flex>
           {children}
         </div>

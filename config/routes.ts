@@ -377,10 +377,7 @@ const baseRoutes = [
         selectedIcon: 'icon-billing-filled',
         defaultIcon: 'icon-billing-outlined',
         hideInMenu: process.env.ENABLE_ENTERPRISE === 'true',
-        // OSS exposes the menu as a teaser for the enterprise billing
-        // module. The page itself just renders an upsell notice — the real
-        // billing UI lives in the enterprise plugin and shadows this route
-        // via `routes.extensions.ts`.
+        access: 'canSeeAdmin',
         component: './billing'
       }
     ]
@@ -401,10 +398,7 @@ const baseRoutes = [
         icon: 'icon-org-outlined',
         selectedIcon: 'icon-org-filled',
         defaultIcon: 'icon-org-outlined',
-        // OSS exposes the menu to platform admins as a teaser for the
-        // enterprise multi-tenancy module. The page itself just renders
-        // an upsell notice — the real CRUD UI lives in the enterprise
-        // plugin and shadows this route via `routes.extensions.ts`.
+        // Organization and member management is available to OSS admins.
         access: 'canSeeAdmin',
         component: './organizations'
       },

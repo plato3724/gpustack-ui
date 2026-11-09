@@ -98,7 +98,7 @@ export default {
   'models.form.tabs.advanced': '高级',
   'models.form.s3address': 'S3 地址',
   'models.form.partialoffload.tips':
-    '启用 CPU 卸载后，GPU 不足时 GPUStack 会自动使用 CPU 内存。请确保推理后端已正确配置为混合 CPU+GPU 或纯 CPU 推理。',
+    '启用 CPU 卸载后，GPU 不足时 曙光算力调度平台 会自动使用 CPU 内存。请确保推理后端已正确配置为混合 CPU+GPU 或纯 CPU 推理。',
   'models.form.distribution.tips':
     '允许在单个节点资源不足时，将部分计算卸载到一个或多个远程节点。',
   'models.openinplayground': '在 Playground 中打开',
@@ -109,7 +109,7 @@ export default {
   'model.deploy.sort': '排序',
   'model.deploy.search.placeholder': '按 <kbd>/</kbd> 开始搜索模型',
   'model.form.ollamatips':
-    '提示：以下为 GPUStack 预设的 Ollama 模型，请选择你想要的模型或者直接在右侧表单 【{name}】 输入框中输入你要部署的模型。',
+    '提示：以下为 曙光算力调度平台 预设的 Ollama 模型，请选择你想要的模型或者直接在右侧表单 【{name}】 输入框中输入你要部署的模型。',
   'models.sort.name': '名称',
   'models.sort.size': '大小',
   'models.sort.likes': '点赞量',
@@ -181,14 +181,14 @@ export default {
   'models.form.filePath': '模型路径',
   'models.form.backendVersion': '后端版本',
   'models.form.backendVersion.tips':
-    '固定以使用期望的 {backend} 版本 {version}，在线环境会自动创建虚拟环境安装对应版本的 {backend}。在 GPUStack 升级后也将保持固定的后端版本。{link}',
+    '固定以使用期望的 {backend} 版本 {version}，在线环境会自动创建虚拟环境安装对应版本的 {backend}。在 曙光算力调度平台 升级后也将保持固定的后端版本。{link}',
   'models.form.customImage': '自定义镜像',
   'models.form.customImage.entry': '使用自定义镜像…',
   'models.form.customImage.backToVersion': '切换至版本选择',
   'models.form.customImage.tips':
-    '使用自定义 {backend} 镜像替代目录版本。GPUStack 不再按 runner 目录校验该镜像，请确认它支持目标设备和分布式部署方式。',
+    '使用自定义 {backend} 镜像替代目录版本。曙光算力调度平台 不再按 runner 目录校验该镜像，请确认它支持目标设备和分布式部署方式。',
   'models.form.customRunCommand.tips':
-    '内置后端只填写启动参数，不包含可执行文件；GPUStack 仍会追加主机、端口，并在适用时追加分布式推理参数。',
+    '内置后端只填写启动参数，不包含可执行文件；曙光算力调度平台 仍会追加主机、端口，并在适用时追加分布式推理参数。',
   'models.form.gpuselector': 'GPU 选择器',
   'models.form.backend.llamabox':
     '用于 GGUF 格式模型，支持 Linux, macOS 和 Windows。',
@@ -277,8 +277,8 @@ export default {
   'models.ollama.deprecated.following':
     '<span class="bold-text">在 v0.7.0 更新后：</span> 所有先前部署的模型仍将正常运行。',
   'models.ollama.deprecated.issue':
-    '参见 GitHub 上的问题 <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">#1979</a>。',
-  'models.ollama.deprecated.notice': `Ollama 模型来源自 v0.6.1 起已被弃用。更多信息请参见相关的 <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">GitHub 问题</a>。`,
+    '',
+  'models.ollama.deprecated.notice': `Ollama 模型来源自 v0.6.1 起已被弃用。`,
   'models.backend.mindie.310p':
     'Ascend 310P 仅支持 FP16，需要设置 --dtype=float16。',
   'models.form.gpuCount': '每副本 GPU 数量',
@@ -459,7 +459,7 @@ export default {
   'models.form.backendVersions.tips': `如需使用更多版本，请前往{link}页面并编辑对应的后端以添加版本。`,
   'models.catalog.nogpus.tips': '所选集群中没有兼容该模型的 GPU。',
   'models.form.modelfile.notfound':
-    '你指定的模型文件路径在 GPUStack Server 节点上不存在。建议在 GPUStack Server 节点和 GPUStack 节点上使用相同的模型文件路径，这有助于 GPUStack 做出更优的调度与决策。',
+    '你指定的模型文件路径在 曙光算力调度平台 Server 节点上不存在。建议在 曙光算力调度平台 Server 节点和 曙光算力调度平台 节点上使用相同的模型文件路径，这有助于 曙光算力调度平台 做出更优的调度与决策。',
   'models.form.readyWorkers': '节点就绪',
   'models.form.maxContextLength': '最大上下文长度',
   'models.form.backend.helperText': '该社区后端暂未启用，部署后将自动启用',
@@ -483,7 +483,7 @@ export default {
   // Model catalog source configuration
   'models.catalog.source.title': '模型库来源',
   'models.catalog.source.official':
-    '在随本版本打包的内置模型库之上，跟随 GPUStack 发布的官方模型库。',
+    '在随本版本打包的内置模型库之上，跟随 曙光算力调度平台 发布的官方模型库。',
 
   // --- Prefill/decode disaggregation ---
   'models.form.pd.section': 'PD 分离配置',
@@ -556,7 +556,7 @@ export default {
   'models.form.roles.replicas': '副本数',
   'models.form.roles.router.routeArgs': '路由参数',
   'models.form.roles.router.routeArgs.tips':
-    'Router 进程启动时的命令行参数。带锁的由 GPUStack 按组的落点渲染，不可编辑。',
+    'Router 进程启动时的命令行参数。带锁的由 曙光算力调度平台 按组的落点渲染，不可编辑。',
   'models.form.roles.router.locality':
     '仅 CPU，由系统就近 Prefill / Decode 自动选择 Worker',
   'models.form.roles.router.workerAllocation': 'Worker 分配',
@@ -575,7 +575,7 @@ export default {
   'models.form.roles.cache.tips': '连接方式与优先级顺序由系统推导，无需配置。',
   'models.form.pd.mode.custom.confirm.title': '切换到自定义模式？',
   'models.form.pd.mode.custom.confirm.reason':
-    '自定义模式不能与 GPUStack 管理的 KV 缓存同时使用。',
+    '自定义模式不能与 曙光算力调度平台 管理的 KV 缓存同时使用。',
   'models.form.pd.mode.custom.confirm.effects':
     '切换后，模型及所有角色的缓存配置将调整为：',
   'models.form.pd.mode.custom.confirm.disable': '关闭 KV 缓存',
@@ -612,7 +612,7 @@ export default {
   'models.pd.degraded.engineVersion':
     '当前固定的引擎版本低于所选 PD 方案声明支持的版本范围。这是允许的 —— 自建镜像可能带有私有版本号 —— 但方案所依赖的行为可能并不存在：例如 SGLang 低于 0.5.7 时，缩容下线的成员无法注销，仍会继续接收流量。',
   'models.pd.degraded.pairingUnverified':
-    'GPUStack 无法确认 Prefill 和 Decode 的部分设置是否满足配对要求。常见情形是一个角色显式指定了某项配对参数的值，另一个角色沿用引擎默认值（如 --max-model-len、--block-size 或 --kv-cache-layout），或由引擎自动选择参数值（如一个角色将 --dtype 设为 auto，另一个设为 float16）。\n\n部署可继续，对于上述情况，请为两个角色显式设置具体值，以便 GPUStack 校验。',
+    '曙光算力调度平台 无法确认 Prefill 和 Decode 的部分设置是否满足配对要求。常见情形是一个角色显式指定了某项配对参数的值，另一个角色沿用引擎默认值（如 --max-model-len、--block-size 或 --kv-cache-layout），或由引擎自动选择参数值（如一个角色将 --dtype 设为 auto，另一个设为 float16）。\n\n部署可继续，对于上述情况，请为两个角色显式设置具体值，以便 曙光算力调度平台 校验。',
   'models.pd.degraded.pairingTP':
     '按成员实际拿到的卡重新算出的有效张量并行度，违反了该 PD 方案声明的方向：NIXL 要求 decode 不窄于 prefill，昇腾 Mooncake 要求 prefill 不窄于 decode。准入阶段查不出来 —— 一个既不固定卡、也不写 --tensor-parallel-size 的角色，在落位之前根本没有数可查。请在两个角色上都设置 --tensor-parallel-size，或给它们符合方案要求的卡数。',
   'models.pd.admission.infeasible':
@@ -641,18 +641,18 @@ export default {
   'models.form.roles.router.connectionArgs': '连接参数',
   'models.form.roles.managed': '系统托管',
   'models.form.roles.managed.tips':
-    '由 GPUStack 按 PD 模式和调度结果自动填入，不可修改，也无需重复填写。双花括号包起来的是占位符，在部署时替换为实际的地址、端口和网卡。',
+    '由 曙光算力调度平台 按 PD 模式和调度结果自动填入，不可修改，也无需重复填写。双花括号包起来的是占位符，在部署时替换为实际的地址、端口和网卡。',
   'models.form.roles.managed.mounts': '宿主机挂载',
   'models.form.roles.managed.locked': '带锁为系统注入，不可编辑',
   'models.form.roles.engine': '引擎',
   'models.form.roles.scheduling.managed':
     '由系统按拓扑亲和性自动调度，不附加节点约束',
   'models.form.roles.managed.params.tips':
-    '这个角色启动时传给引擎的参数。带锁的由 GPUStack 按 PD 模式注入，你自己加的追加在后面。',
+    '这个角色启动时传给引擎的参数。带锁的由 曙光算力调度平台 按 PD 模式注入，你自己加的追加在后面。',
   'models.form.roles.managed.env.tips':
-    '这个角色容器里的环境变量。带锁的由 GPUStack 注入，多为控制面地址与网卡。',
+    '这个角色容器里的环境变量。带锁的由 曙光算力调度平台 注入，多为控制面地址与网卡。',
   'models.form.roles.managed.mounts.tips':
-    '从宿主机挂进容器的路径。只能由 GPUStack 添加：传输方案需要读的宿主机文件，加速器运行时不会自动带进来。',
+    '从宿主机挂进容器的路径。只能由 曙光算力调度平台 添加：传输方案需要读的宿主机文件，加速器运行时不会自动带进来。',
   'models.form.roles.resources': '资源',
   'models.form.roles.resources.cpu': 'CPU（核）',
   'models.form.roles.resources.memory': '内存（GiB）',
@@ -707,14 +707,14 @@ export default {
   'models.form.gather.infeasible.warning':
     '按当前容量此组将无法部署；保存后组会一直等待，直到有空位。可选：改成「尽量靠近」（会跨机，KV 传输变慢）· 降低副本或每副本卡数',
   'models.pd.membership.dynamic':
-    '支持动态扩缩容。GPUStack 通过 API 更新 Router 成员，无需因成员变化重建 Router。',
+    '支持动态扩缩容。曙光算力调度平台 通过 API 更新 Router 成员，无需因成员变化重建 Router。',
   'models.pd.membership.restart':
-    '不支持动态成员更新。扩缩容、成员重建或重启后，GPUStack 会自动重建 Router；期间服务可能短暂不可用，正在处理的请求可能中断。',
+    '不支持动态成员更新。扩缩容、成员重建或重启后，曙光算力调度平台 会自动重建 Router；期间服务可能短暂不可用，正在处理的请求可能中断。',
   'models.pd.membership.manual':
     '此 Router 由你维护。扩缩容或成员变化后，请更新成员地址和 bootstrap 信息，必要时重启 Router。',
   'models.pd.instance.delete.restart':
-    '补建成员后，GPUStack 会重建 Router；期间服务可能短暂不可用，正在处理的请求可能中断。',
+    '补建成员后，曙光算力调度平台 会重建 Router；期间服务可能短暂不可用，正在处理的请求可能中断。',
   'models.pd.instance.delete.manual':
-    'GPUStack 会补建成员。请同步更新你维护的 Router 的成员地址和 bootstrap 信息，必要时重启 Router。',
+    '曙光算力调度平台 会补建成员。请同步更新你维护的 Router 的成员地址和 bootstrap 信息，必要时重启 Router。',
   'models.pd.membership.updating': '正在加载 Router 成员'
 };
