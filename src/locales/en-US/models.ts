@@ -103,7 +103,7 @@ export default {
   'models.form.tabs.scheduling': 'Scheduling',
   'models.form.tabs.advanced': 'Advanced',
   'models.form.s3address': 'S3 Address',
-  'models.form.partialoffload.tips': `When CPU offloading is enabled, GPUStack will allocate CPU memory if GPU resources are insufficient. You must correctly configure the inference backend to use hybrid CPU+GPU or full CPU inference.`,
+  'models.form.partialoffload.tips': `When CPU offloading is enabled, 曙光算力调度平台 will allocate CPU memory if GPU resources are insufficient. You must correctly configure the inference backend to use hybrid CPU+GPU or full CPU inference.`,
   'models.form.distribution.tips': `Allows for offloading part of the model's layers to single or multiple remote workers when the resources of a worker are insufficient.`,
   'models.openinplayground': 'Open in Playground',
   'models.instances': 'instances',
@@ -113,7 +113,7 @@ export default {
   'model.deploy.sort': 'Sort',
   'model.deploy.search.placeholder': 'Type <kbd>/</kbd> to search models',
   'model.form.ollamatips':
-    'Tip: The following are the preconfigured Ollama models in GPUStack. Please select the model you want, or directly enter the model you wish to deploy in the 【{name}】 input box on the right.',
+    'Tip: The following are the preconfigured Ollama models in 曙光算力调度平台. Please select the model you want, or directly enter the model you wish to deploy in the 【{name}】 input box on the right.',
   'models.sort.name': 'Name',
   'models.sort.size': 'Size',
   'models.sort.likes': 'Likes',
@@ -188,14 +188,14 @@ export default {
   'models.form.filePath': 'Model Path',
   'models.form.backendVersion': 'Backend Version',
   'models.form.backendVersion.tips':
-    'To use the desired version of {backend}{version}, the system will automatically create a virtual environment in the online environment to install the corresponding version. After a GPUStack upgrade, the backend version will remain fixed. {link}',
+    'To use the desired version of {backend}{version}, the system will automatically create a virtual environment in the online environment to install the corresponding version. After a 曙光算力调度平台 upgrade, the backend version will remain fixed. {link}',
   'models.form.customImage': 'Custom Image',
   'models.form.customImage.entry': 'Use a custom image…',
   'models.form.customImage.backToVersion': 'Select a version instead',
   'models.form.customImage.tips':
-    'Use your own {backend} image instead of a catalog version. GPUStack skips runner catalog compatibility checks for this image; confirm it supports your devices and distributed setup.',
+    'Use your own {backend} image instead of a catalog version. 曙光算力调度平台 skips runner catalog compatibility checks for this image; confirm it supports your devices and distributed setup.',
   'models.form.customRunCommand.tips':
-    'For built-in backends, enter startup arguments without the executable. GPUStack still appends host and port, plus distributed settings where applicable.',
+    'For built-in backends, enter startup arguments without the executable. 曙光算力调度平台 still appends host and port, plus distributed settings where applicable.',
   'models.form.gpuselector': 'GPU Selector',
   'models.form.backend.llamabox':
     'For GGUF format models, supports Linux, macOS, and Windows.',
@@ -293,8 +293,8 @@ export default {
   'models.ollama.deprecated.following':
     '<span class="bold-text">Following the v0.7.0 update,</span> all previously deployed models will continue to work as expected.',
   'models.ollama.deprecated.issue':
-    'See the related issue: <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">#1979 on GitHub</a>.',
-  'models.ollama.deprecated.notice': `The Ollama model source has been deprecated as of v0.6.1. For more information, see the <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">related GitHub issue</a>.`,
+    '',
+  'models.ollama.deprecated.notice': `The Ollama model source has been deprecated as of v0.6.1. `,
   'models.backend.mindie.310p':
     'Ascend 310P only supports FP16, so you need to set --dtype=float16.',
   'models.form.gpuCount': 'GPUs per Replica',
@@ -485,7 +485,7 @@ export default {
   'models.form.backendVersions.tips': `To use more versions, go to the {link} page and edit the backend to add versions.`,
   'models.catalog.nogpus.tips':
     'No compatible GPUs are available in the selected cluster for this model.',
-  'models.form.modelfile.notfound': `The model file path you specified does not exist on the GPUStack server. It's recommended to place the model file at the same path on both the GPUStack server and GPUStack workers. This helps GPUStack make better decisions.`,
+  'models.form.modelfile.notfound': `The model file path you specified does not exist on the 曙光算力调度平台 server. It's recommended to place the model file at the same path on both the 曙光算力调度平台 server and 曙光算力调度平台 workers. This helps 曙光算力调度平台 make better decisions.`,
   'models.form.readyWorkers': 'workers ready',
   'models.form.maxContextLength': 'Maximum Context Length',
   'models.form.backend.helperText':
@@ -510,7 +510,7 @@ export default {
   // Model catalog source configuration
   'models.catalog.source.title': 'Catalog Source',
   'models.catalog.source.official':
-    'Follows the catalog GPUStack publishes, on top of the one packaged with this release.',
+    'Follows the catalog 曙光算力调度平台 publishes, on top of the one packaged with this release.',
 
   // --- Prefill/decode disaggregation ---
   'models.form.pd.section': 'PD Disaggregation',
@@ -586,7 +586,7 @@ export default {
   'models.form.roles.replicas': 'Replicas',
   'models.form.roles.router.routeArgs': 'Route arguments',
   'models.form.roles.router.routeArgs.tips':
-    'The command line the router process starts with. Locked rows are rendered by GPUStack from where the group landed and cannot be edited.',
+    'The command line the router process starts with. Locked rows are rendered by 曙光算力调度平台 from where the group landed and cannot be edited.',
   'models.form.roles.router.locality':
     'CPU only; placed automatically, as near this group’s prefill and decode as it fits',
   'models.form.roles.router.workerAllocation': 'Worker allocation',
@@ -606,7 +606,7 @@ export default {
     'The connection method and priority order are derived by the system; no configuration needed.',
   'models.form.pd.mode.custom.confirm.title': 'Switch to Custom?',
   'models.form.pd.mode.custom.confirm.reason':
-    'Custom mode cannot be used with GPUStack-managed KV cache.',
+    'Custom mode cannot be used with 曙光算力调度平台-managed KV cache.',
   'models.form.pd.mode.custom.confirm.effects':
     'Switching will make these changes to this model and all roles:',
   'models.form.pd.mode.custom.confirm.disable': 'Disable KV cache',
@@ -648,7 +648,7 @@ export default {
   'models.pd.degraded.engineVersion':
     'The pinned engine version is below the range the selected PD recipe declares support for. This is allowed — a self-built image may carry a private version number — but the behaviour the recipe assumes may be missing: on SGLang below 0.5.7, for example, a scaled-down member cannot be deregistered and keeps taking traffic.',
   'models.pd.degraded.pairingUnverified':
-    'GPUStack could not confirm that certain Prefill and Decode settings meet the pairing requirements. This commonly occurs when one role explicitly sets a pairing parameter and the other uses the engine default (for a parameter such as --max-model-len, --block-size, or --kv-cache-layout) or lets the engine choose the value automatically (for example, --dtype=auto on one role and --dtype=float16 on the other).\n\nDeployment can proceed. In these cases, explicitly set a concrete value for the parameter on both roles so GPUStack can validate the configuration.',
+    '曙光算力调度平台 could not confirm that certain Prefill and Decode settings meet the pairing requirements. This commonly occurs when one role explicitly sets a pairing parameter and the other uses the engine default (for a parameter such as --max-model-len, --block-size, or --kv-cache-layout) or lets the engine choose the value automatically (for example, --dtype=auto on one role and --dtype=float16 on the other).\n\nDeployment can proceed. In these cases, explicitly set a concrete value for the parameter on both roles so 曙光算力调度平台 can validate the configuration.',
   'models.pd.degraded.pairingTP':
     'The effective tensor parallelism — recomputed from the cards the members actually got — breaks the direction this PD recipe declares: NIXL needs decode at least as wide as prefill, Ascend Mooncake needs prefill at least as wide as decode. Admission could not catch this, because a role that pins no cards and writes no --tensor-parallel-size has no number to check until it is placed. Set --tensor-parallel-size on both roles, or give them GPU counts the recipe allows.',
   'models.pd.admission.infeasible':
@@ -680,7 +680,7 @@ export default {
   'models.form.roles.router.connectionArgs': 'Connection arguments',
   'models.form.roles.managed': 'Managed by the system',
   'models.form.roles.managed.tips':
-    'Filled in by GPUStack from the PD mode and where the group is scheduled. Read-only, and there is no need to repeat any of it. Values in double braces are placeholders, replaced with the real addresses, ports and NIC at deployment.',
+    'Filled in by 曙光算力调度平台 from the PD mode and where the group is scheduled. Read-only, and there is no need to repeat any of it. Values in double braces are placeholders, replaced with the real addresses, ports and NIC at deployment.',
   'models.form.roles.managed.mounts': 'Host mounts',
   'models.form.roles.managed.locked':
     'Locked rows are injected by the system and cannot be edited',
@@ -688,11 +688,11 @@ export default {
   'models.form.roles.scheduling.managed':
     'Placed by the scheduler using the affinity set above, with no node constraint of its own',
   'models.form.roles.managed.params.tips':
-    "The arguments this role's engine starts with. Locked ones are injected by GPUStack from the PD mode; yours are appended after them.",
+    "The arguments this role's engine starts with. Locked ones are injected by 曙光算力调度平台 from the PD mode; yours are appended after them.",
   'models.form.roles.managed.env.tips':
-    "Environment variables set on this role's container. Locked ones are injected by GPUStack, mostly control-plane addresses and the NIC to use.",
+    "Environment variables set on this role's container. Locked ones are injected by 曙光算力调度平台, mostly control-plane addresses and the NIC to use.",
   'models.form.roles.managed.mounts.tips':
-    'Host paths bind-mounted into the container. Only GPUStack can add one: these are host files the transport has to read that the accelerator runtime does not bring in by itself.',
+    'Host paths bind-mounted into the container. Only 曙光算力调度平台 can add one: these are host files the transport has to read that the accelerator runtime does not bring in by itself.',
   'models.form.roles.resources': 'Resources',
   'models.form.roles.resources.cpu': 'CPU (cores)',
   'models.form.roles.resources.memory': 'Memory (GiB)',
@@ -750,14 +750,14 @@ export default {
   'models.form.gather.infeasible.warning':
     'At current capacity this group cannot be placed; once saved it will wait until room frees up. Options: switch to “as close as possible” (may span hosts, slower KV transfer) · reduce replicas or GPUs per replica',
   'models.pd.membership.dynamic':
-    'Supports dynamic scaling. GPUStack updates router members through the API without rebuilding the router for membership changes.',
+    'Supports dynamic scaling. 曙光算力调度平台 updates router members through the API without rebuilding the router for membership changes.',
   'models.pd.membership.restart':
-    'Dynamic member updates are unavailable. GPUStack automatically rebuilds the router after scaling or member recovery/restarts. Service may be briefly unavailable and in-flight requests may fail.',
+    'Dynamic member updates are unavailable. 曙光算力调度平台 automatically rebuilds the router after scaling or member recovery/restarts. Service may be briefly unavailable and in-flight requests may fail.',
   'models.pd.membership.manual':
     'You manage this router. After scaling or member changes, update peer addresses and bootstrap metadata and restart the router when needed.',
   'models.pd.instance.delete.restart':
-    'After recreating the member, GPUStack rebuilds the router. Service may be briefly unavailable and in-flight requests may fail.',
+    'After recreating the member, 曙光算力调度平台 rebuilds the router. Service may be briefly unavailable and in-flight requests may fail.',
   'models.pd.instance.delete.manual':
-    'GPUStack recreates the member. Update your router peer addresses and bootstrap metadata, and restart the router when needed.',
+    '曙光算力调度平台 recreates the member. Update your router peer addresses and bootstrap metadata, and restart the router when needed.',
   'models.pd.membership.updating': 'Loading router members'
 };

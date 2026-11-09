@@ -1,16 +1,30 @@
 export default {
-  'organizations.upsell.title':
-    'Управление организациями доступно в GPUStack Enterprise',
-  'organizations.upsell.subtitle':
-    'Мультитенантность позволяет изолировать пользователей, ресурсы и квоты команд. Перейдите на GPUStack Enterprise, чтобы управлять организациями.',
-  'organizations.upsell.featuresTitle': 'Возможности Enterprise',
-  'organizations.upsell.feature.orgs':
-    'Создание организаций для группировки пользователей и изоляции рабочих нагрузок',
-  'organizations.upsell.feature.members':
-    'Управление участниками и ролями в каждой организации',
-  'organizations.upsell.feature.quotas':
-    'Настройка квот ресурсов и Token для каждой организации',
-  'organizations.upsell.feature.isolation':
-    'Разграничение API-ключей, развёртываний моделей и ресурсов по организациям',
-  'organizations.upsell.cta': 'Подробнее об Enterprise'
+  'organizations.organization': 'Организация',
+  'organizations.name': 'Идентификатор организации',
+  'organizations.create': 'Создать организацию',
+  'organizations.edit': 'Изменить организацию',
+  'organizations.detail': 'Сведения об организации',
+  'organizations.empty': 'Нет организаций',
+  'organizations.empty.hint':
+    'Создайте организацию, добавьте пользователей или группы и назначьте роли.',
+  'organizations.notFound': 'Организации не найдены',
+  'organizations.form.name.hint':
+    'Начните со строчной латинской буквы. Используйте строчные латинские буквы, цифры и дефисы. Дефис в конце запрещён. После создания изменить нельзя.',
+  'organizations.form.reserved':
+    'Это имя зарезервировано системой. Выберите другое имя.',
+  'organizations.members': 'Участники',
+  'organizations.member': 'Участник',
+  'organizations.members.add': 'Добавить участников',
+  'organizations.members.remove': 'Удалить',
+  'organizations.members.joinedAt': 'Дата вступления',
+  'organizations.members.hint':
+    'Владельцы управляют ресурсами и участниками организации; участники используют разрешённые ресурсы. Последнего действующего владельца нельзя удалить или понизить в роли. Перед удалением участника удалите созданные им API-ключи в этой организации.',
+  'organizations.role': 'Роль',
+  'organizations.role.owner': 'Владелец',
+  'organizations.role.member': 'Участник',
+  'organizations.kind': 'Тип участника',
+  'organizations.kind.user': 'Пользователь',
+  'organizations.kind.group': 'Группа',
+  'organizations.loadError': 'Не удалось загрузить данные. Повторите попытку.',
+  'organizations.retry': 'Повторить'
 };

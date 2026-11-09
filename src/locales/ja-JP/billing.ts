@@ -1,7 +1,7 @@
 export default {
-  'billing.upsell.title': '請求管理は GPUStack Enterprise の機能です',
+  'billing.upsell.title': '請求管理は 曙光算力调度平台 Enterprise の機能です',
   'billing.upsell.subtitle':
-    'チームごとの支出の追跡、請求書の発行、予算の管理ができます。請求管理を利用するには GPUStack Enterprise にアップグレードしてください。',
+    'チームごとの支出の追跡、請求書の発行、予算の管理ができます。請求管理を利用するには 曙光算力调度平台 Enterprise にアップグレードしてください。',
   'billing.upsell.featuresTitle': 'Enterprise で利用できる機能',
   'billing.upsell.feature.usage':
     '組織、ユーザー、モデルごとの費用の内訳を確認',
