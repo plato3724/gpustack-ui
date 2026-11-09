@@ -502,8 +502,8 @@ export const getBackendParamsTips = (backend: string) => {
   if (backend === backendOptionsMap.llamaBox) {
     return {
       backend: 'llama-box',
-      releases: 'https://github.com/gpustack/llama-box/releases',
-      link: 'https://github.com/gpustack/llama-box?tab=readme-ov-file#usage',
+      releases: '',
+      link: '',
       version: 'v0.0.140'
     };
   }
@@ -536,7 +536,7 @@ export const getBackendParamsTips = (backend: string) => {
 
   return {
     backend: 'vox-box',
-    releases: 'https://github.com/gpustack/vox-box/releases',
+    releases: '',
     link: '',
     version: 'v0.0.13'
   };

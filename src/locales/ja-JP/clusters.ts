@@ -92,7 +92,7 @@ export default {
   'clusters.addworker.detectWorkerAddress.tips':
     '指定がない場合、デフォルトで Worker IP が使用されます。',
   'clusters.addworker.externalIP.tips':
-    'VPC やプライベートネットワークで実行している場合は、GPUStack Server から到達可能な Worker の外部アドレスを指定してください。',
+    'VPC やプライベートネットワークで実行している場合は、曙光算力调度平台 Server から到達可能な Worker の外部アドレスを指定してください。',
   'clusters.addworker.enterWorkerIP': 'Worker の IP を入力',
   'clusters.addworker.enterWorkerIP.error': 'Worker の IP を入力してください。',
   'clusters.addworker.enterWorkerAddress': 'Worker の外部アドレスを入力',
@@ -123,11 +123,11 @@ export default {
     '新しい Worker が {count} 台クラスターに追加されました。',
   'clusters.addworker.message.success_multiple':
     '新しい Worker が {count} 台クラスターに追加されました。',
-  'clusters.create.serverUrl': 'GPUStack Server URL',
+  'clusters.create.serverUrl': '曙光算力调度平台 Server URL',
   'clusters.create.workerConfig': 'Worker 設定',
   'clusters.chartValues.title': 'チャート値（YAML）',
   'clusters.chartValues.tip':
-    'GPUStack の Helm チャート用の値です。チャートと同じキーを使用し、サーバーが導出した値にマージされます。上に専用の項目がない、チャートやサブチャートの設定を指定できます（例：クラスターが既に提供しているコンポーネントを無効にする）。Helm と同様、リストは追記されず、置き換えられます。',
+    '曙光算力调度平台 の Helm チャート用の値です。チャートと同じキーを使用し、サーバーが導出した値にマージされます。上に専用の項目がない、チャートやサブチャートの設定を指定できます（例：クラスターが既に提供しているコンポーネントを無効にする）。Helm と同様、リストは追記されず、置き換えられます。',
   'clusters.chartValues.reapply.tip':
     'クラスターを保存しても Kubernetes 側は変更されません。「クラスターを登録」を再実行してマニフェストを取得し、再度適用してください。クラスター内の Job がマニフェストの要求とリリースの実際の構成を比較し、差分がある場合にのみアップグレードします。',
   'clusters.chartValues.doc.chart': 'チャート値',
@@ -144,13 +144,13 @@ export default {
   'clusters.addworker.containerName': 'Worker コンテナ名',
   'clusters.addworker.containerName.tips':
     'Worker のコンテナ名を指定してください。',
-  'clusters.addworker.dataVolume': 'GPUStack データボリューム',
+  'clusters.addworker.dataVolume': '曙光算力调度平台 データボリューム',
   'clusters.addworker.dataVolume.tips':
-    'GPUStack のデータ保存先パスを指定してください。',
+    '曙光算力调度平台 のデータ保存先パスを指定してください。',
   'clusters.table.ip.internal': '内部',
   'clusters.table.ip.external': '外部',
   'clusters.form.serverUrl.tips':
-    'Worker が GPUStack Server に直接アクセスできない場合は、外部からアクセス可能な GPUStack サービスの URL を指定してください。例: {example}',
+    'Worker が 曙光算力调度平台 Server に直接アクセスできない場合は、外部からアクセス可能な 曙光算力调度平台 サービスの URL を指定してください。例: {example}',
   'clusters.form.setDefault': 'デフォルトに設定',
   'clusters.form.setDefault.tips': 'デプロイ時のデフォルトです。',
   'clusters.addworker.noClusters':
@@ -171,7 +171,7 @@ export default {
   'clusters.addworker.theadNotes-02':
     'T-Head PPU は、デバイスの割り当てに Container Device Interface（CDI）を使用します。CDI の生成には <span class="bold-text">/var/run/cdi</span> ディレクトリが利用可能である必要があります。',
   'clusters.addworker.nvidiaNotes':
-    'GPUStack の内蔵推論バックエンドには <span class="bold-text">CUDA 12.8+</span> が必要です。NVIDIA ドライバーのバージョンが <span class="bold-text">570</span> 以降であることを確認してください。',
+    '曙光算力调度平台 の内蔵推論バックエンドには <span class="bold-text">CUDA 12.8+</span> が必要です。NVIDIA ドライバーのバージョンが <span class="bold-text">570</span> 以降であることを確認してください。',
   'clusters.volume.title': 'ボリュームマウント',
   'clusters.volume.name': 'ボリューム名',
   'clusters.volume.mountPath': 'コンテナ内のパス',
@@ -200,7 +200,7 @@ export default {
   'clusters.systemDefaultContainerRegistry.title':
     'デフォルトのコンテナレジストリ',
   'clusters.systemDefaultContainerRegistry.tip':
-    'このクラスターで GPUStack イメージを解決する際に使用するデフォルトのレジストリです。未設定の場合はサーバーのデフォルトを使用します。',
+    'このクラスターで 曙光算力调度平台 イメージを解決する際に使用するデフォルトのレジストリです。未設定の場合はサーバーのデフォルトを使用します。',
   'clusters.systemDefaultContainerRegistry.dockerHubUnreachable':
     '{provider} のインスタンスは Docker Hub にアクセスできません。ミラーまたはプライベートレジストリを使用してください。',
   'clusters.k8sOptions.title': 'Kubernetes デプロイオプション',
@@ -214,7 +214,7 @@ export default {
     'すべての Worker DaemonSet に適用する Pod の nodeSelector です。ラベルが一致するノードでのみ Worker を実行できます。',
   'clusters.operatorImage.title': 'Operator イメージ',
   'clusters.operatorImage.tip':
-    'GPUStack Operator のコンテナイメージを上書きします。空欄にするとサーバーのデフォルトを使用します。',
+    '曙光算力调度平台 Operator のコンテナイメージを上書きします。空欄にするとサーバーのデフォルトを使用します。',
   'clusters.namespace.title': '名前空間',
   'clusters.namespace.tip':
     'クラスターのマニフェストを生成する Kubernetes の名前空間です。空欄にすると gpustack-system を使用します。',
@@ -384,7 +384,7 @@ export default {
   'clusters.topology.layer.name': '名前',
   'clusters.topology.advanced.hostKeys': '組み込み、Worker 名による',
   'clusters.topology.advanced.locked':
-    'GPUStack 固有キー：手入力値はここに書かれます。削除・移動不可。',
+    '曙光算力调度平台 固有キー：手入力値はここに書かれます。削除・移動不可。',
   'clusters.topology.advanced.suggestions': '発見されたラベルキー',
   'clusters.topology.advanced.suggestion':
     'Worker {workers} 台 · {values} 個の値 · {field} のようです',

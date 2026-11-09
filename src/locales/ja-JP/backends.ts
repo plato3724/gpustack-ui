@@ -62,8 +62,8 @@ export default {
   'backend.source.title': 'バックエンドのソース',
   'backend.source.builtin.title': '内蔵バックエンド',
   'backend.source.builtin.official':
-    '内蔵バックエンド（vLLM、SGLang、MindIE、VoxBox）向けに GPUStack が公開するイメージのバージョンを使用します。',
+    '内蔵バックエンド（vLLM、SGLang、MindIE、VoxBox）向けに 曙光算力调度平台 が公開するイメージのバージョンを使用します。',
   'backend.source.community.title': 'コミュニティバックエンド',
   'backend.source.community.official':
-    'このリリースに同梱された一覧に加え、GPUStack が公開するコミュニティバックエンドの一覧を使用します。'
+    'このリリースに同梱された一覧に加え、曙光算力调度平台 が公開するコミュニティバックエンドの一覧を使用します。'
 };

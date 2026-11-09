@@ -124,7 +124,7 @@ export default {
   'playgorund.audio.voice.error':
     'Голоса недоступны. Модель инициализируется. Обновите через некоторое время.',
   'playground.params.size.description':
-    'Максимальный размер изображения зависит от параметров модели. <a href="https://github.com/gpustack/llama-box" target="_blank">Подробнее</a>',
+    'Максимальный размер изображения зависит от параметров модели. ',
   'playground.documents.verify.embedding': 'Добавьте минимум два текста.',
   'playground.documents.verify.rerank': 'Документы не могут быть пустыми.',
   'playground.image.guidance.tip':

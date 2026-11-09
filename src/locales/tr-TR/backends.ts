@@ -59,8 +59,8 @@ export default {
   'backend.source.title': 'Altyapı Kaynağı',
   'backend.source.builtin.title': 'Yerleşik Altyapı',
   'backend.source.builtin.official':
-    "GPUStack'in yerleşik altyapılar (vLLM, SGLang, MindIE, VoxBox) için yayınladığı imaj sürümlerini izler.",
+    "曙光算力调度平台'in yerleşik altyapılar (vLLM, SGLang, MindIE, VoxBox) için yayınladığı imaj sürümlerini izler.",
   'backend.source.community.title': 'Topluluk Altyapısı',
   'backend.source.community.official':
-    "Bu sürümle paketlenenin yanı sıra GPUStack'in yayınladığı topluluk altyapı listesini izler."
+    "Bu sürümle paketlenenin yanı sıra 曙光算力调度平台'in yayınladığı topluluk altyapı listesini izler."
 };

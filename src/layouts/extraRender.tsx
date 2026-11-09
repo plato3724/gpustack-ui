@@ -2,12 +2,10 @@ import { GPUStackVersionAtom, UpdateCheckAtom } from '@/atoms/user';
 import PluginExtraField from '@/components/plugin-extra-fields';
 import VersionInfo, { modalConfig } from '@/components/version-info';
 import { documentationPaths } from '@/constants/documentation';
-import externalLinks from '@/constants/external-links';
 import { logout } from '@/pages/login/apis';
 import { getGPUStackPlugin } from '@/plugins';
 import { getDocumentationUrl } from '@/utils/documentation';
 import { useModel } from '@@/plugin-model';
-import { DiscordOutlined, GithubOutlined } from '@ant-design/icons';
 import { DropdownActions, IconFont, useBodyScroll } from '@gpustack/core-ui';
 import { history, useIntl, useNavigate } from '@umijs/max';
 import { Avatar, Button, Divider, Modal } from 'antd';
@@ -15,7 +13,6 @@ import { useAtom } from 'jotai';
 import { useMemo } from 'react';
 import styled from 'styled-components';
 import { DEFAULT_ENTER_PAGE } from '../config/settings';
-import GithubStar from './github-star';
 
 // A tinted pill, not a solid orange block. `#fff` on `--ant-orange-5` measured
 // 1.91:1 — the one element on the page whose whole job is to be noticed was the
@@ -82,8 +79,8 @@ const IconWrapper = styled.button`
 
 // 12, not 24: the icon triggers now carry their own 28px hover box, so the gap
 // no longer has to stand in for one. Not 8, because this row is not a uniform
-// icon cluster — it also holds an org switcher, the GitHub star widget and the
-// version string, and those have no internal padding to borrow from.
+// icon cluster — it also holds an org switcher and the version string, and
+// those have no internal padding to borrow from.
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -245,28 +242,10 @@ export const ExtraContent = (props: { isDarkTheme?: boolean }) => {
 
   const helpList = [
     {
-      key: 'site',
-      icon: <IconFont type="icon-home"></IconFont>,
-      label: 'GPUStack',
-      url: externalLinks.site
-    },
-    {
-      key: 'github',
-      icon: <GithubOutlined />,
-      label: intl.formatMessage({ id: 'common.issue.report' }),
-      url: externalLinks.reportIssue
-    },
-    {
       key: 'faq',
       icon: <IconFont type="icon-fankuifaqs"></IconFont>,
       label: intl.formatMessage({ id: 'common.button.faq' }),
       url: getDocumentationUrl(documentationPaths.faq, intl.locale)
-    },
-    {
-      key: 'Discord',
-      icon: <DiscordOutlined />,
-      label: 'Discord',
-      url: externalLinks.discord
     },
     {
       key: 'docs',
@@ -353,7 +332,6 @@ export const ExtraContent = (props: { isDarkTheme?: boolean }) => {
     <Wrapper>
       {contextHolder}
       <PluginExtraField name="OrgSwitcher" isDarkTheme={isDarkTheme} />
-      {process.env.ENABLE_ENTERPRISE !== 'true' && <GithubStar />}
       <div
         style={{
           display: 'flex',

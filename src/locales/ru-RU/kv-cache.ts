@@ -11,7 +11,7 @@ export default {
   'kvCache.providerSelect.title': 'Выбор провайдера',
   'kvCache.provider.source.builtin': 'Встроенный',
   'kvCache.provider.source.community': 'Сообщество',
-  'kvCache.provider.source.partner': 'Сертифицированный партнёр GPUStack',
+  'kvCache.provider.source.partner': 'Сертифицированный партнёр 曙光算力调度平台',
   'kvCache.button.viewLogs': 'Просмотр логов',
   'kvCache.edit.recreate.tips':
     'Изменения вступят в силу после удаления и пересоздания экземпляров.',

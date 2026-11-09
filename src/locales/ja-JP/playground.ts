@@ -127,7 +127,7 @@ export default {
   'playgorund.audio.voice.error':
     '音声が利用できません。モデルが初期化中の可能性があります。少し待ってからリフレッシュしてください。',
   'playground.params.size.description':
-    '生成される画像の最大サイズは、モデルのデプロイパラメータによって制御されます。<a href="https://github.com/gpustack/llama-box" target="_blank">このリンクを参照してください</a>',
+    '生成される画像の最大サイズは、モデルのデプロイパラメータによって制御されます。',
   'playground.documents.verify.embedding':
     '少なくとも2つのテキストを追加してください。',
   'playground.documents.verify.rerank': 'ドキュメントは空にできません。',

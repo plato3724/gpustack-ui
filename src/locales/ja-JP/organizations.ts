@@ -1,7 +1,7 @@
 export default {
-  'organizations.upsell.title': '組織管理は GPUStack Enterprise の機能です',
+  'organizations.upsell.title': '組織管理は 曙光算力调度平台 Enterprise の機能です',
   'organizations.upsell.subtitle':
-    'マルチテナント機能により、チームごとにユーザー、リソース、クォータを分離できます。組織管理を利用するには GPUStack Enterprise にアップグレードしてください。',
+    'マルチテナント機能により、チームごとにユーザー、リソース、クォータを分離できます。組織管理を利用するには 曙光算力调度平台 Enterprise にアップグレードしてください。',
   'organizations.upsell.featuresTitle': 'Enterprise で利用できる機能',
   'organizations.upsell.feature.orgs':
     '組織を作成してユーザーをグループ化し、ワークロードを分離',

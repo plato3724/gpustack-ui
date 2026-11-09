@@ -54,7 +54,7 @@ export default {
     'MacOSまたはWindowsはサポートされていません。',
   'resources.worker.current.version': '現在のバージョンは {version} です。',
   'resources.worker.driver.install':
-    '<a href="https://docs.gpustack.ai/latest/installation/installation-requirements/" target="_blank">必要なドライバとライブラリ</a> をGPUStackのインストール前にインストールしてください。',
+    '必要なドライバとライブラリ を曙光算力调度平台のインストール前にインストールしてください。',
   'resources.worker.select.command':
     'ラベルを選択してコマンドを生成し、コピーを使用してコマンドをコピーします。',
   'resources.worker.script.install': 'スクリプトインストール',
@@ -91,7 +91,7 @@ export default {
     '<span class="bold-text">Token</span> を貼り付けてください。',
   'resources.register.worker.step7':
     '<span class="bold-text">再起動</span> をクリックして設定を適用してください。',
-  'resources.register.install.title': '{os} に GPUStack をインストール',
+  'resources.register.install.title': '{os} に 曙光算力调度平台 をインストール',
   'resources.register.download':
     '<a href={url} target="_blank">インストーラー</a>をダウンロードしてインストールしてください。対応バージョン: {versions}。',
   'resource.register.maos.support':
@@ -124,7 +124,7 @@ export default {
     '利用可能なクラスターがありません。ノードを追加する前にクラスターを作成してください。',
   'resources.metrics.details': '監視',
   'resoureces.worker.upgrade.tips':
-    'Worker と GPUStack Server のバージョンが一致していません。同じバージョンを使用してください。',
+    'Worker と 曙光算力调度平台 Server のバージョンが一致していません。同じバージョンを使用してください。',
   'resources.worker.version': 'Worker のバージョン: {version}',
   'resources.server.version': 'サーバーのバージョン: {version}',
   'resources.worker.currentVersion': '現在のバージョン: {version}',

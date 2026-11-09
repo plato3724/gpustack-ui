@@ -1,12 +1,8 @@
 // @ts-nocheck
 import avatarImg from '@/assets/images/avatar.png';
 import { documentationPaths } from '@/constants/documentation';
-import externalLinks from '@/constants/external-links';
 import { getDocumentationUrl } from '@/utils/documentation';
 import {
-  DiscordOutlined,
-  GithubOutlined,
-  HomeOutlined,
   InfoCircleOutlined,
   LogoutOutlined,
   MoreOutlined,
@@ -82,28 +78,10 @@ export const getRightRenderContent = (opts: {
 
   const helpList = [
     {
-      key: 'site',
-      icon: <HomeOutlined />,
-      label: 'GPUStack',
-      url: externalLinks.site
-    },
-    {
-      key: 'github',
-      icon: <GithubOutlined />,
-      label: intl.formatMessage({ id: 'common.issue.report' }),
-      url: externalLinks.reportIssue
-    },
-    {
       key: 'faq',
       icon: <IconFont type="icon-fankuifaqs"></IconFont>,
       label: intl.formatMessage({ id: 'common.button.faq' }),
       url: getDocumentationUrl(documentationPaths.faq, intl.locale)
-    },
-    {
-      key: 'Discord',
-      icon: <DiscordOutlined />,
-      label: 'Discord',
-      url: externalLinks.discord
     },
     {
       key: 'docs',

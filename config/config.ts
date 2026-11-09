@@ -80,7 +80,7 @@ export default defineConfig({
   antd: {
     style: 'less'
   },
-  title: 'GPUStack',
+  title: '曙光算力调度平台',
   hash: true,
   access: {},
   model: {},
@@ -111,7 +111,7 @@ export default defineConfig({
     antd: true,
     baseNavigator: true,
     baseSeparator: '-',
-    default: 'en-US',
+    default: 'zh-CN',
     title: false,
     useLocalStorage: true
   },
