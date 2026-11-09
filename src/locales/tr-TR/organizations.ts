@@ -1,15 +1,30 @@
 export default {
-  'organizations.upsell.title': 'Kuruluşlar bir Enterprise özelliğidir',
-  'organizations.upsell.subtitle':
-    "Çok kiracılılık, kullanıcıları, kaynakları ve kotaları ekipler arasında yalıtmanızı sağlar. Kuruluşları yönetmek için 曙光算力调度平台 Enterprise'a yükseltin.",
-  'organizations.upsell.featuresTitle': 'Enterprise ile elde ettikleriniz',
-  'organizations.upsell.feature.orgs':
-    'Kullanıcıları gruplamak ve iş yüklerini yalıtmak için kuruluşlar oluşturun',
-  'organizations.upsell.feature.members':
-    'Her kuruluş için üyeleri ve rolleri yönetin',
-  'organizations.upsell.feature.quotas':
-    'Her kuruluş için kaynak ve token kotaları belirleyin',
-  'organizations.upsell.feature.isolation':
-    'API anahtarlarını, model dağıtımlarını ve kaynakları kuruluş bazında sınırlandırın',
-  'organizations.upsell.cta': 'Enterprise hakkında bilgi alın'
+  'organizations.organization': 'Kuruluş',
+  'organizations.name': 'Kuruluş tanımlayıcısı',
+  'organizations.create': 'Kuruluş oluştur',
+  'organizations.edit': 'Kuruluşu düzenle',
+  'organizations.detail': 'Kuruluş ayrıntıları',
+  'organizations.empty': 'Kuruluş yok',
+  'organizations.empty.hint':
+    'Bir kuruluş oluşturun, kullanıcı veya grup ekleyin ve üye rollerini atayın.',
+  'organizations.notFound': 'Eşleşen kuruluş bulunamadı',
+  'organizations.form.name.hint':
+    'Küçük harfle başlayın. Yalnızca küçük Latin harfleri, rakamlar ve kısa çizgi kullanın; kısa çizgiyle bitirmeyin. Oluşturulduktan sonra değiştirilemez.',
+  'organizations.form.reserved':
+    'Bu ad sistem için ayrılmıştır. Başka bir ad seçin.',
+  'organizations.members': 'Üyeler',
+  'organizations.member': 'Üye',
+  'organizations.members.add': 'Üye ekle',
+  'organizations.members.remove': 'Kaldır',
+  'organizations.members.joinedAt': 'Katılma zamanı',
+  'organizations.members.hint':
+    'Sahipler kuruluş kaynaklarını ve üyelerini yönetir; üyeler izin verilen kaynakları kullanır. Son etkin sahip kaldırılamaz veya rolü düşürülemez. Bir üyeyi kaldırmadan önce bu kuruluşta oluşturduğu API anahtarlarını silin.',
+  'organizations.role': 'Rol',
+  'organizations.role.owner': 'Sahip',
+  'organizations.role.member': 'Üye',
+  'organizations.kind': 'Üye türü',
+  'organizations.kind.user': 'Kullanıcı',
+  'organizations.kind.group': 'Grup',
+  'organizations.loadError': 'Veriler yüklenemedi. Lütfen yeniden deneyin.',
+  'organizations.retry': 'Yeniden dene'
 };

@@ -1,15 +1,30 @@
 export default {
-  'organizations.upsell.title': 'Organizations are an Enterprise feature',
-  'organizations.upsell.subtitle':
-    'Multi-tenancy lets you isolate users, resources, and quotas across teams. Upgrade to 曙光算力调度平台 Enterprise to manage organizations.',
-  'organizations.upsell.featuresTitle': 'What you get in Enterprise',
-  'organizations.upsell.feature.orgs':
-    'Create organizations to group users and isolate workloads',
-  'organizations.upsell.feature.members':
-    'Manage members and roles per organization',
-  'organizations.upsell.feature.quotas':
-    'Set resource and token quotas per organization',
-  'organizations.upsell.feature.isolation':
-    'Scope API keys, model deployments, and resources per organization',
-  'organizations.upsell.cta': 'Learn about Enterprise'
+  'organizations.organization': 'Organization',
+  'organizations.name': 'Organization identifier',
+  'organizations.create': 'Create organization',
+  'organizations.edit': 'Edit organization',
+  'organizations.detail': 'Organization details',
+  'organizations.empty': 'No organizations',
+  'organizations.empty.hint':
+    'Create an organization, then add users or groups and assign member roles.',
+  'organizations.notFound': 'No matching organizations',
+  'organizations.form.name.hint':
+    'Start with a lowercase letter. Use lowercase letters, numbers and hyphens; do not end with a hyphen. Cannot be changed after creation.',
+  'organizations.form.reserved':
+    'This name is reserved for the system. Choose another name.',
+  'organizations.members': 'Members',
+  'organizations.member': 'Member',
+  'organizations.members.add': 'Add members',
+  'organizations.members.remove': 'Remove',
+  'organizations.members.joinedAt': 'Joined at',
+  'organizations.members.hint':
+    'Owners manage organization resources and members; members use resources they are granted access to. The last effective owner cannot be removed or demoted. Delete a member’s API keys in this organization before removing them.',
+  'organizations.role': 'Role',
+  'organizations.role.owner': 'Owner',
+  'organizations.role.member': 'Member',
+  'organizations.kind': 'Member type',
+  'organizations.kind.user': 'User',
+  'organizations.kind.group': 'Group',
+  'organizations.loadError': 'Could not load data. Please retry.',
+  'organizations.retry': 'Retry'
 };
