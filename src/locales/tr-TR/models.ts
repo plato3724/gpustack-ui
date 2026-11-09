@@ -104,7 +104,7 @@ export default {
   'models.form.tabs.scheduling': 'Zamanlama',
   'models.form.tabs.advanced': 'Gelişmiş',
   'models.form.s3address': 'S3 Adresi',
-  'models.form.partialoffload.tips': `CPU aktarımı etkinleştirildiğinde, GPU kaynakları yetersiz olduğunda GPUStack CPU belleği ayırır. Hibrit CPU+GPU veya tam CPU çıkarımı kullanmak için çıkarım altyapısını doğru şekilde yapılandırmanız gerekir.`,
+  'models.form.partialoffload.tips': `CPU aktarımı etkinleştirildiğinde, GPU kaynakları yetersiz olduğunda 曙光算力调度平台 CPU belleği ayırır. Hibrit CPU+GPU veya tam CPU çıkarımı kullanmak için çıkarım altyapısını doğru şekilde yapılandırmanız gerekir.`,
   'models.form.distribution.tips': `Bir işçi düğümün kaynakları yetersiz olduğunda, modelin katmanlarının bir kısmının tekli veya çoklu uzak işçi düğümlere aktarılmasına olanak tanır.`,
   'models.openinplayground': 'Deneme Alanında Aç',
   'models.instances': 'örnekler',
@@ -114,7 +114,7 @@ export default {
   'model.deploy.sort': 'Sırala',
   'model.deploy.search.placeholder': 'Modelleri aramak için <kbd>/</kbd> yazın',
   'model.form.ollamatips':
-    "İpucu: Aşağıdakiler GPUStack'te önceden yapılandırılmış Ollama modelleridir. İstediğiniz modeli seçin veya dağıtmak istediğiniz modeli doğrudan sağdaki 【{name}】 giriş kutusuna yazın.",
+    "İpucu: Aşağıdakiler 曙光算力调度平台'te önceden yapılandırılmış Ollama modelleridir. İstediğiniz modeli seçin veya dağıtmak istediğiniz modeli doğrudan sağdaki 【{name}】 giriş kutusuna yazın.",
   'models.sort.name': 'Ad',
   'models.sort.size': 'Boyut',
   'models.sort.likes': 'Beğeniler',
@@ -189,14 +189,14 @@ export default {
   'models.form.filePath': 'Model Yolu',
   'models.form.backendVersion': 'Altyapı Sürümü',
   'models.form.backendVersion.tips':
-    '{backend}{version} sürümünü kullanmak için sistem, ilgili sürümü yüklemek üzere çevrimiçi ortamda otomatik olarak sanal ortam oluşturur. GPUStack yükseltmesinden sonra altyapı sürümü sabit kalır. {link}',
+    '{backend}{version} sürümünü kullanmak için sistem, ilgili sürümü yüklemek üzere çevrimiçi ortamda otomatik olarak sanal ortam oluşturur. 曙光算力调度平台 yükseltmesinden sonra altyapı sürümü sabit kalır. {link}',
   'models.form.customImage': 'Özel İmaj',
   'models.form.customImage.entry': 'Özel imaj kullan…',
   'models.form.customImage.backToVersion': 'Bunun yerine bir sürüm seç',
   'models.form.customImage.tips':
-    'Katalog sürümü yerine kendi {backend} imajınızı kullanın. GPUStack bu imaj için çalıştırıcı kataloğu uyumluluk kontrollerini atlar; imajın cihazlarınızı ve dağıtık kurulumunuzu desteklediğinden emin olun.',
+    'Katalog sürümü yerine kendi {backend} imajınızı kullanın. 曙光算力调度平台 bu imaj için çalıştırıcı kataloğu uyumluluk kontrollerini atlar; imajın cihazlarınızı ve dağıtık kurulumunuzu desteklediğinden emin olun.',
   'models.form.customRunCommand.tips':
-    'Yerleşik altyapılarda başlatma argümanlarını çalıştırılabilir dosya olmadan girin. GPUStack yine de ana bilgisayarı ve portu, gerektiğinde dağıtık ayarları da ekler.',
+    'Yerleşik altyapılarda başlatma argümanlarını çalıştırılabilir dosya olmadan girin. 曙光算力调度平台 yine de ana bilgisayarı ve portu, gerektiğinde dağıtık ayarları da ekler.',
   'models.form.gpuselector': 'GPU Seçici',
   'models.form.backend.llamabox':
     'GGUF format modeller için, Linux, macOS ve Windows destekler.',
@@ -293,8 +293,8 @@ export default {
   'models.ollama.deprecated.following':
     '<span class="bold-text">v0.7.0 güncellemesinin ardından,</span> daha önce dağıtılmış tüm modeller beklendiği gibi çalışmaya devam edecektir.',
   'models.ollama.deprecated.issue':
-    'İlgili soruna bakın: <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">GitHub\'da #1979</a>.',
-  'models.ollama.deprecated.notice': `Ollama model kaynağı v0.6.1 itibarıyla kullanımdan kaldırılmıştır. Daha fazla bilgi için <a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">ilgili GitHub sorununa</a> bakın.`,
+    '',
+  'models.ollama.deprecated.notice': `Ollama model kaynağı v0.6.1 itibarıyla kullanımdan kaldırılmıştır. `,
   'models.backend.mindie.310p':
     'Ascend 310P yalnızca FP16 destekler, bu nedenle --dtype=float16 ayarlamanız gerekir.',
   'models.form.gpuCount': 'Kopya Başına GPU',
@@ -487,7 +487,7 @@ export default {
   'models.form.backendVersions.tips': `Daha fazla sürüm kullanmak için {link} sayfasına gidin ve sürüm eklemek üzere altyapıyı düzenleyin.`,
   'models.catalog.nogpus.tips':
     'Seçili kümede bu model için uyumlu GPU bulunmuyor.',
-  'models.form.modelfile.notfound': `Belirttiğiniz model dosyası yolu GPUStack sunucusunda mevcut değil. Model dosyasını hem GPUStack sunucusunda hem de GPUStack işçi düğümlerinde aynı yola yerleştirmeniz önerilir. Bu, GPUStack'in daha iyi kararlar almasına yardımcı olur.`,
+  'models.form.modelfile.notfound': `Belirttiğiniz model dosyası yolu 曙光算力调度平台 sunucusunda mevcut değil. Model dosyasını hem 曙光算力调度平台 sunucusunda hem de 曙光算力调度平台 işçi düğümlerinde aynı yola yerleştirmeniz önerilir. Bu, 曙光算力调度平台'in daha iyi kararlar almasına yardımcı olur.`,
   'models.form.readyWorkers': 'hazır işçi düğüm',
   'models.form.maxContextLength': 'Maksimum Bağlam Uzunluğu',
   'models.form.backend.helperText':
@@ -512,7 +512,7 @@ export default {
   // Model catalog source configuration
   'models.catalog.source.title': 'Katalog Kaynağı',
   'models.catalog.source.official':
-    "Bu sürümle paketlenenin yanı sıra GPUStack'in yayınladığı kataloğu izler.",
+    "Bu sürümle paketlenenin yanı sıra 曙光算力调度平台'in yayınladığı kataloğu izler.",
 
   // --- Prefill/decode disaggregation ---
   'models.form.pd.section': 'PD Ayrıştırma Ayarları',
@@ -588,7 +588,7 @@ export default {
   'models.form.roles.replicas': 'Replikalar',
   'models.form.roles.router.routeArgs': 'Yönlendirme argümanları',
   'models.form.roles.router.routeArgs.tips':
-    'Router sürecinin başlatıldığı komut satırı argümanları. Kilitli satırları GPUStack, grubun yerleştiği yere göre üretir ve düzenlenemez.',
+    'Router sürecinin başlatıldığı komut satırı argümanları. Kilitli satırları 曙光算力调度平台, grubun yerleştiği yere göre üretir ve düzenlenemez.',
   'models.form.roles.router.locality':
     'Yalnızca CPU; bu grubun prefill ve decode üyelerine olabildiğince yakın bir Worker’a otomatik yerleştirilir',
   'models.form.roles.router.workerAllocation': 'Worker ataması',
@@ -608,7 +608,7 @@ export default {
     'Bağlantı yöntemi ve öncelik sırası sistem tarafından türetilir; ayar gerekmez.',
   'models.form.pd.mode.custom.confirm.title': 'Özel moda geçilsin mi?',
   'models.form.pd.mode.custom.confirm.reason':
-    'Özel mod, GPUStack tarafından yönetilen KV önbelleğiyle birlikte kullanılamaz.',
+    'Özel mod, 曙光算力调度平台 tarafından yönetilen KV önbelleğiyle birlikte kullanılamaz.',
   'models.form.pd.mode.custom.confirm.effects':
     'Geçiş yapıldığında bu model ve tüm roller için şu değişiklikler yapılır:',
   'models.form.pd.mode.custom.confirm.disable':
@@ -651,7 +651,7 @@ export default {
   'models.pd.degraded.engineVersion':
     'Sabitlenen motor sürümü, seçilen PD reçetesinin desteklediğini bildirdiği aralığın altında. Buna izin verilir — kendiniz derlediğiniz bir imaj özel bir sürüm numarası taşıyabilir — ancak reçetenin varsaydığı davranış eksik olabilir: örneğin 0.5.7 altındaki SGLang sürümlerinde, ölçek küçültmeyle çıkarılan bir üyenin kaydı silinemez ve trafik almayı sürdürür.',
   'models.pd.degraded.pairingUnverified':
-    'GPUStack, Prefill ve Decode rollerinin bazı ayarlarının eşleştirme gereksinimlerini karşılayıp karşılamadığını doğrulayamadı. Bu durum genellikle rollerden birinde bir eşleştirme parametresinin değeri açıkça belirtilirken diğerinde motorun varsayılan değeri kullanıldığında (örneğin --max-model-len, --block-size veya --kv-cache-layout için) ya da değeri motor otomatik olarak seçtiğinde (örneğin bir rolde --dtype=auto, diğerinde --dtype=float16 olduğunda) görülür.\n\nDağıtıma devam edilebilir. Bu durumlarda GPUStack’in doğrulama yapabilmesi için ilgili parametreye her iki rolde de açıkça belirli bir değer atayın.',
+    '曙光算力调度平台, Prefill ve Decode rollerinin bazı ayarlarının eşleştirme gereksinimlerini karşılayıp karşılamadığını doğrulayamadı. Bu durum genellikle rollerden birinde bir eşleştirme parametresinin değeri açıkça belirtilirken diğerinde motorun varsayılan değeri kullanıldığında (örneğin --max-model-len, --block-size veya --kv-cache-layout için) ya da değeri motor otomatik olarak seçtiğinde (örneğin bir rolde --dtype=auto, diğerinde --dtype=float16 olduğunda) görülür.\n\nDağıtıma devam edilebilir. Bu durumlarda 曙光算力调度平台’in doğrulama yapabilmesi için ilgili parametreye her iki rolde de açıkça belirli bir değer atayın.',
   'models.pd.degraded.pairingTP':
     'Üyelerin gerçekte aldığı kartlardan yeniden hesaplanan etkin tensör paralelliği, bu PD reçetesinin bildirdiği yönü ihlal ediyor: NIXL, decode’un prefill’den dar olmamasını; Ascend Mooncake ise prefill’in decode’dan dar olmamasını gerektirir. Kart sabitlemeyen ve --tensor-parallel-size yazmayan bir rolün yerleşimden önce denetlenecek bir sayısı olmadığı için bu, kabul aşamasında yakalanamaz. --tensor-parallel-size değerini iki rolde de ayarlayın veya reçetenin izin verdiği GPU sayılarını verin.',
   'models.pd.admission.infeasible':
@@ -681,10 +681,10 @@ export default {
   'models.pd.ratio': 'Oran',
   'models.form.roles.router.entrypoint': 'Çalıştırma komutu',
   'models.form.roles.router.connectionArgs':
-    'Bağlantı parametreleri (GPUStack tarafından verilir)',
+    'Bağlantı parametreleri (曙光算力调度平台 tarafından verilir)',
   'models.form.roles.managed': 'Sistem tarafından yönetilir',
   'models.form.roles.managed.tips':
-    'GPUStack tarafından PD moduna ve grubun zamanlandığı yere göre doldurulur. Salt okunurdur ve bunların hiçbirini yeniden belirtmeniz gerekmez. Çift süslü parantez içindeki değerler yer tutucudur; dağıtım sırasında gerçek adresler, portlar ve ağ arayüzü ile değiştirilir.',
+    '曙光算力调度平台 tarafından PD moduna ve grubun zamanlandığı yere göre doldurulur. Salt okunurdur ve bunların hiçbirini yeniden belirtmeniz gerekmez. Çift süslü parantez içindeki değerler yer tutucudur; dağıtım sırasında gerçek adresler, portlar ve ağ arayüzü ile değiştirilir.',
   'models.form.roles.managed.mounts': 'Ana makine bağlamaları',
   'models.form.roles.managed.locked':
     'Kilitli satırlar sistem tarafından eklenir ve düzenlenemez',
@@ -692,11 +692,11 @@ export default {
   'models.form.roles.scheduling.managed':
     'Yukarıda ayarlanan topoloji yakınlığına göre sistem tarafından yerleştirilir; ayrıca düğüm kısıtı uygulanmaz',
   'models.form.roles.managed.params.tips':
-    'Bu rolün motorunun başlatıldığı argümanlar. Kilitli olanları GPUStack, PD moduna göre ekler; sizinkiler bunların ardına eklenir.',
+    'Bu rolün motorunun başlatıldığı argümanlar. Kilitli olanları 曙光算力调度平台, PD moduna göre ekler; sizinkiler bunların ardına eklenir.',
   'models.form.roles.managed.env.tips':
-    'Bu rolün kapsayıcısına ayarlanan ortam değişkenleri. Kilitli olanları GPUStack ekler; çoğu denetim düzlemi adresleri ve kullanılacak ağ arayüzüdür.',
+    'Bu rolün kapsayıcısına ayarlanan ortam değişkenleri. Kilitli olanları 曙光算力调度平台 ekler; çoğu denetim düzlemi adresleri ve kullanılacak ağ arayüzüdür.',
   'models.form.roles.managed.mounts.tips':
-    'Ana makineden kapsayıcıya bağlanan yollar. Yalnızca GPUStack ekleyebilir: bunlar aktarımın okuması gereken, hızlandırıcı çalışma zamanının kendiliğinden getirmediği ana makine dosyalarıdır.',
+    'Ana makineden kapsayıcıya bağlanan yollar. Yalnızca 曙光算力调度平台 ekleyebilir: bunlar aktarımın okuması gereken, hızlandırıcı çalışma zamanının kendiliğinden getirmediği ana makine dosyalarıdır.',
   'models.form.roles.resources': 'Kaynaklar',
   'models.form.roles.resources.cpu': 'CPU (çekirdek)',
   'models.form.roles.resources.memory': 'Bellek (GiB)',
@@ -750,14 +750,14 @@ export default {
   'models.form.gather.infeasible.warning':
     'Mevcut kapasiteyle bu grup yerleştirilemez; kaydedildikten sonra yer açılana kadar bekler. Seçenekler: “olabildiğince yakın” seçeneğine geçin (sunuculara yayılabilir, KV aktarımı yavaşlar) · kopya sayısını veya kopya başına GPU sayısını azaltın',
   'models.pd.membership.dynamic':
-    'Dinamik ölçeklendirme desteklenir. GPUStack, üye değişikliklerinde Router yeniden oluşturmadan API üzerinden üyeleri günceller.',
+    'Dinamik ölçeklendirme desteklenir. 曙光算力调度平台, üye değişikliklerinde Router yeniden oluşturmadan API üzerinden üyeleri günceller.',
   'models.pd.membership.restart':
-    'Dinamik üye güncellemeleri desteklenmez. Ölçeklendirme, üye kurtarma veya yeniden başlatma sonrasında GPUStack Router yeniden oluşturur. Hizmet kısa süreli kesilebilir ve devam eden istekler başarısız olabilir.',
+    'Dinamik üye güncellemeleri desteklenmez. Ölçeklendirme, üye kurtarma veya yeniden başlatma sonrasında 曙光算力调度平台 Router yeniden oluşturur. Hizmet kısa süreli kesilebilir ve devam eden istekler başarısız olabilir.',
   'models.pd.membership.manual':
     'Bu Router sizin tarafınızdan yönetilir. Ölçeklendirme veya üye değişikliklerinden sonra adresleri ve bootstrap bilgilerini güncelleyin; gerekirse Router yeniden başlatın.',
   'models.pd.instance.delete.restart':
-    'Üye yeniden oluşturulduktan sonra GPUStack Router yeniden oluşturur. Hizmet kısa süreli kesilebilir ve devam eden istekler başarısız olabilir.',
+    'Üye yeniden oluşturulduktan sonra 曙光算力调度平台 Router yeniden oluşturur. Hizmet kısa süreli kesilebilir ve devam eden istekler başarısız olabilir.',
   'models.pd.instance.delete.manual':
-    'GPUStack üyeyi yeniden oluşturur. Router üye adreslerini ve bootstrap bilgilerini güncelleyin; gerekirse Router yeniden başlatın.',
+    '曙光算力调度平台 üyeyi yeniden oluşturur. Router üye adreslerini ve bootstrap bilgilerini güncelleyin; gerekirse Router yeniden başlatın.',
   'models.pd.membership.updating': 'Router üyeleri yükleniyor'
 };

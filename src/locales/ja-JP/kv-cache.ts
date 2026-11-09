@@ -11,7 +11,7 @@ export default {
   'kvCache.providerSelect.title': 'プロバイダーを選択',
   'kvCache.provider.source.builtin': '内蔵',
   'kvCache.provider.source.community': 'コミュニティ',
-  'kvCache.provider.source.partner': 'GPUStack 認定パートナー',
+  'kvCache.provider.source.partner': '曙光算力调度平台 認定パートナー',
   'kvCache.button.viewLogs': 'ログを表示',
   'kvCache.edit.recreate.tips':
     '変更は、インスタンスを削除して再作成した後に反映されます。',

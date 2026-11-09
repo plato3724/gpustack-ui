@@ -1,7 +1,7 @@
 export default {
   'billing.upsell.title': 'Faturalandırma bir Enterprise özelliğidir',
   'billing.upsell.subtitle':
-    "Harcamaları izleyin, fatura oluşturun ve ekipler genelinde bütçe uygulayın. Faturalandırmayı yönetmek için GPUStack Enterprise'a yükseltin.",
+    "Harcamaları izleyin, fatura oluşturun ve ekipler genelinde bütçe uygulayın. Faturalandırmayı yönetmek için 曙光算力调度平台 Enterprise'a yükseltin.",
   'billing.upsell.featuresTitle': 'Enterprise ile elde ettikleriniz',
   'billing.upsell.feature.usage':
     'Kuruluş, kullanıcı ve model bazında maliyet dökümlerini görün',

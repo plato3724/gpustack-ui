@@ -1,6 +1,6 @@
 import { IconFont } from '@gpustack/core-ui';
 import { useIntl } from '@umijs/max';
-import { Button, Result, Typography } from 'antd';
+import { Result, Typography } from 'antd';
 import PageBox from '../_components/page-box';
 
 // OSS-only upsell page for the multi-tenancy module. The real
@@ -59,16 +59,6 @@ const Organizations: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              <div style={{ textAlign: 'center', marginTop: 56 }}>
-                <Button
-                  type="primary"
-                  href="https://gpustack.ai/enterprise"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {intl.formatMessage({ id: 'organizations.upsell.cta' })}
-                </Button>
-              </div>
             </div>
           }
         />

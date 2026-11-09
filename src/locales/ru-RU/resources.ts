@@ -53,7 +53,7 @@ export default {
   'resources.worker.container.supported': 'Только для Linux.',
   'resources.worker.current.version': 'Текущая версия: {version}',
   'resources.worker.driver.install':
-    'Установите <a href="https://docs.gpustack.ai/latest/installation/installation-requirements/" target="_blank">необходимые драйверы и библиотеки</a> перед установкой GPUStack.',
+    'Установите необходимые драйверы и библиотеки перед установкой 曙光算力调度平台.',
   'resources.worker.select.command':
     'Выберите метку для генерации команды и скопируйте её.',
   'resources.worker.script.install': 'Установка скриптом',
@@ -89,7 +89,7 @@ export default {
     'Вставьте <span class="bold-text">Token</span>.',
   'resources.register.worker.step7':
     'Нажмите <span class="bold-text">Перезапуск</span> для применения настроек.',
-  'resources.register.install.title': 'Установка GPUStack на {os}',
+  'resources.register.install.title': 'Установка 曙光算力调度平台 на {os}',
   'resources.register.download':
     'Скачайте и установите <a href={url} target="_blank">инсталлятор</a>. Поддерживаемые версии: {versions}.',
   'resource.register.maos.support': 'Apple Silicon (серия M), macOS 14+',
@@ -121,7 +121,7 @@ export default {
     'Нет доступных кластеров. Создайте кластер перед добавлением узла.',
   'resources.metrics.details': 'Мониторинг',
   'resoureces.worker.upgrade.tips':
-    'Версия Worker не совпадает с версией GPUStack Server. Используйте одинаковые версии.',
+    'Версия Worker не совпадает с версией 曙光算力调度平台 Server. Используйте одинаковые версии.',
   'resources.worker.version': 'Версия Worker: {version}',
   'resources.server.version': 'Версия сервера: {version}',
   'resources.worker.currentVersion': 'Текущая версия: {version}',

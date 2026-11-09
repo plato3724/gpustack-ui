@@ -123,7 +123,7 @@ export default {
   'playgorund.audio.voice.error':
     '声音无法使用。该模型可能仍在初始化。请稍候后刷新。',
   'playground.params.size.description':
-    '图片生成的最大尺寸受控于模型的部署参数。<a href="https://github.com/gpustack/llama-box" target="_blank">参考文档</a>',
+    '图片生成的最大尺寸受控于模型的部署参数。',
   'playground.documents.verify.embedding': '至少输入两条文本',
   'playground.documents.verify.rerank': '文档不能为空',
   'playground.image.guidance.tip': '引导比例，影响图片的质量和多样性。',

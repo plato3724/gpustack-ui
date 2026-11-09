@@ -1,8 +1,8 @@
 export default {
   'organizations.upsell.title':
-    'Управление организациями доступно в GPUStack Enterprise',
+    'Управление организациями доступно в 曙光算力调度平台 Enterprise',
   'organizations.upsell.subtitle':
-    'Мультитенантность позволяет изолировать пользователей, ресурсы и квоты команд. Перейдите на GPUStack Enterprise, чтобы управлять организациями.',
+    'Мультитенантность позволяет изолировать пользователей, ресурсы и квоты команд. Перейдите на 曙光算力调度平台 Enterprise, чтобы управлять организациями.',
   'organizations.upsell.featuresTitle': 'Возможности Enterprise',
   'organizations.upsell.feature.orgs':
     'Создание организаций для группировки пользователей и изоляции рабочих нагрузок',

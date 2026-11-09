@@ -61,8 +61,8 @@ export default {
   'backend.source.title': 'Источник бэкендов',
   'backend.source.builtin.title': 'Встроенный бэкенд',
   'backend.source.builtin.official':
-    'Использует версии образов, которые GPUStack публикует для встроенных бэкендов (vLLM, SGLang, MindIE, VoxBox).',
+    'Использует версии образов, которые 曙光算力调度平台 публикует для встроенных бэкендов (vLLM, SGLang, MindIE, VoxBox).',
   'backend.source.community.title': 'Бэкенд сообщества',
   'backend.source.community.official':
-    'Использует публикуемый GPUStack список бэкендов сообщества в дополнение к списку, включённому в этот выпуск.'
+    'Использует публикуемый 曙光算力调度平台 список бэкендов сообщества в дополнение к списку, включённому в этот выпуск.'
 };

@@ -11,7 +11,7 @@ export default {
   'kvCache.providerSelect.title': 'Sağlayıcı Seç',
   'kvCache.provider.source.builtin': 'Yerleşik',
   'kvCache.provider.source.community': 'Topluluk',
-  'kvCache.provider.source.partner': 'GPUStack Sertifikalı İş Ortağı',
+  'kvCache.provider.source.partner': '曙光算力调度平台 Sertifikalı İş Ortağı',
   'kvCache.button.viewLogs': 'Günlükleri Görüntüle',
   'kvCache.edit.recreate.tips':
     'Değişiklikler, örnekler silinip yeniden oluşturulduktan sonra etkili olur.',

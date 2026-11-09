@@ -284,39 +284,7 @@ const ClusterAdvanceConfig: React.FC<{
               // makes them share one model, and one editor's text shows up in
               // the other.
               path="inmemory://model/chart-values.yaml"
-              title={
-                <span className="flex-center">
-                  <span>{`YAML`}</span>
-                  <Button
-                    size="small"
-                    type="link"
-                    target="_blank"
-                    href="https://github.com/gpustack/gpustack/blob/main/charts/gpustack-chart/values.yaml"
-                  >
-                    {intl.formatMessage({
-                      id: 'clusters.chartValues.doc.chart'
-                    })}{' '}
-                    <IconFont
-                      type="icon-external-link"
-                      className="font-size-14"
-                    ></IconFont>
-                  </Button>
-                  <Button
-                    size="small"
-                    type="link"
-                    target="_blank"
-                    href="https://github.com/gpustack/gpustack-operator"
-                  >
-                    {intl.formatMessage({
-                      id: 'clusters.chartValues.doc.operator'
-                    })}{' '}
-                    <IconFont
-                      type="icon-external-link"
-                      className="font-size-14"
-                    ></IconFont>
-                  </Button>
-                </span>
-              }
+              title={<span>{`YAML`}</span>}
               value={chartValuesContent}
               // Tall enough to show the placeholder down to its Kueue/NFD
               // warning without scrolling — that comment block is the only place

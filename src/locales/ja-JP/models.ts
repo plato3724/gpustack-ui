@@ -105,7 +105,7 @@ export default {
   'models.form.tabs.advanced': '詳細設定',
   'models.form.s3address': 'S3アドレス',
   'models.form.partialoffload.tips':
-    'CPU オフロードを有効にすると、GPU リソースが不足している場合に GPUStack が CPU メモリを割り当てます。CPU と GPU の併用または CPU のみの推論を利用するには、推論バックエンドを正しく設定する必要があります。',
+    'CPU オフロードを有効にすると、GPU リソースが不足している場合に 曙光算力调度平台 が CPU メモリを割り当てます。CPU と GPU の併用または CPU のみの推論を利用するには、推論バックエンドを正しく設定する必要があります。',
   'models.form.distribution.tips':
     'Workerのリソースが不足している場合、モデルの一部のレイヤーを単一または複数のリモートWorkerにオフロードすることができます。',
   'models.openinplayground': 'プレイグラウンドで開く',
@@ -116,7 +116,7 @@ export default {
   'model.deploy.sort': '並び替え',
   'model.deploy.search.placeholder': '<kbd>/</kbd>を入力してモデルを検索',
   'model.form.ollamatips':
-    'ヒント: 以下はGPUStackで事前設定されたOllamaモデルです。希望するモデルを選択するか、右側の【{name}】入力ボックスにデプロイしたいモデルを直接入力してください。',
+    'ヒント: 以下は曙光算力调度平台で事前設定されたOllamaモデルです。希望するモデルを選択するか、右側の【{name}】入力ボックスにデプロイしたいモデルを直接入力してください。',
   'models.sort.name': '名前',
   'models.sort.size': 'サイズ',
   'models.sort.likes': 'いいね',
@@ -191,14 +191,14 @@ export default {
   'models.form.filePath': 'モデルパス',
   'models.form.backendVersion': 'バックエンドバージョン',
   'models.form.backendVersion.tips':
-    '希望する{backend}{version}バージョンを使用するには、システムがオンライン環境で対応するバージョンをインストールする仮想環境を自動的に作成します。GPUStackのアップグレード後もバックエンドバージョンは固定されます。{link}',
+    '希望する{backend}{version}バージョンを使用するには、システムがオンライン環境で対応するバージョンをインストールする仮想環境を自動的に作成します。曙光算力调度平台のアップグレード後もバックエンドバージョンは固定されます。{link}',
   'models.form.customImage': 'カスタムイメージ',
   'models.form.customImage.entry': 'カスタムイメージを使用…',
   'models.form.customImage.backToVersion': 'バージョンの選択に戻る',
   'models.form.customImage.tips':
-    'カタログのバージョンの代わりに、独自の {backend} イメージを使用します。このイメージでは、GPUStack はランナーカタログの互換性チェックを行いません。使用するデバイスと分散構成に対応していることを確認してください。',
+    'カタログのバージョンの代わりに、独自の {backend} イメージを使用します。このイメージでは、曙光算力调度平台 はランナーカタログの互換性チェックを行いません。使用するデバイスと分散構成に対応していることを確認してください。',
   'models.form.customRunCommand.tips':
-    '内蔵バックエンドでは、実行ファイル名を含めずに起動引数を入力してください。GPUStack はホストとポートを追加し、必要に応じて分散実行の設定も追加します。',
+    '内蔵バックエンドでは、実行ファイル名を含めずに起動引数を入力してください。曙光算力调度平台 はホストとポートを追加し、必要に応じて分散実行の設定も追加します。',
   'models.form.gpuselector': 'GPUセレクター',
   'models.form.backend.llamabox':
     'GGUF形式のモデル用（Linux、macOS、Windowsをサポート）。',
@@ -295,9 +295,9 @@ export default {
   'models.ollama.deprecated.following':
     '<span class="bold-text">v0.7.0 への更新後も、</span>デプロイ済みのモデルはこれまでどおり動作します。',
   'models.ollama.deprecated.issue':
-    '関連する課題を参照してください：<a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">GitHub の #1979</a>。',
+    '',
   'models.ollama.deprecated.notice':
-    'Ollama のモデルソースは v0.6.1 から非推奨です。詳細は<a href="https://github.com/gpustack/gpustack/issues/1979" target="_blank">関連する GitHub の課題</a>を参照してください。',
+    'Ollama のモデルソースは v0.6.1 から非推奨です。',
   'models.backend.mindie.310p':
     'Ascend 310P は FP16 のみ対応しているため、--dtype=float16 を設定する必要があります。',
   'models.form.gpuCount': '各レプリカのGPU数',
@@ -493,7 +493,7 @@ export default {
   'models.catalog.nogpus.tips':
     '選択したクラスターには、このモデルに対応する GPU がありません。',
   'models.form.modelfile.notfound':
-    '指定されたモデルファイルのパスは GPUStack Server に存在しません。GPUStack Server と GPUStack Worker の両方で、モデルファイルを同じパスに配置することを推奨します。これにより、GPUStack がより適切に判断できます。',
+    '指定されたモデルファイルのパスは 曙光算力调度平台 Server に存在しません。曙光算力调度平台 Server と 曙光算力调度平台 Worker の両方で、モデルファイルを同じパスに配置することを推奨します。これにより、曙光算力调度平台 がより適切に判断できます。',
   'models.form.readyWorkers': '準備完了の Worker',
   'models.form.maxContextLength': '最大コンテキスト長',
   'models.form.backend.helperText':
@@ -518,7 +518,7 @@ export default {
   // Model catalog source configuration
   'models.catalog.source.title': 'カタログのソース',
   'models.catalog.source.official':
-    'このリリースに同梱されたカタログに加え、GPUStack が公開するカタログを使用します。',
+    'このリリースに同梱されたカタログに加え、曙光算力调度平台 が公開するカタログを使用します。',
 
   // --- Prefill/decode disaggregation ---
   'models.form.pd.section': 'PD 分離設定',
@@ -594,7 +594,7 @@ export default {
   'models.form.roles.replicas': 'レプリカ数',
   'models.form.roles.router.routeArgs': 'ルーティング引数',
   'models.form.roles.router.routeArgs.tips':
-    'ルータープロセスの起動コマンドラインです。ロックされた行は、グループの配置先に基づいて GPUStack が生成するため、編集できません。',
+    'ルータープロセスの起動コマンドラインです。ロックされた行は、グループの配置先に基づいて 曙光算力调度平台 が生成するため、編集できません。',
   'models.form.roles.router.locality':
     'CPU のみ。このグループの Prefill / Decode になるべく近い Worker にシステムが自動配置します',
   'models.form.roles.router.workerAllocation': 'Worker 割り当て',
@@ -615,7 +615,7 @@ export default {
   'models.form.pd.mode.custom.confirm.title':
     'カスタムモードに切り替えますか？',
   'models.form.pd.mode.custom.confirm.reason':
-    'カスタムモードでは GPUStack が管理する KV キャッシュを使用できません。',
+    'カスタムモードでは 曙光算力调度平台 が管理する KV キャッシュを使用できません。',
   'models.form.pd.mode.custom.confirm.effects':
     '切り替えると、このモデルとすべてのロールに以下の変更が適用されます：',
   'models.form.pd.mode.custom.confirm.disable': 'KV キャッシュを無効にする',
@@ -657,7 +657,7 @@ export default {
   'models.pd.degraded.engineVersion':
     '固定されているエンジンバージョンが、選択した PD レシピが対応を宣言する範囲を下回っています。これは許容されます —— 自前でビルドしたイメージが独自のバージョン番号を持つことがあります —— が、レシピが前提とする動作が存在しない可能性があります。たとえば SGLang 0.5.7 未満では、縮退で外されたメンバーを登録解除できず、トラフィックを受け取り続けます。',
   'models.pd.degraded.pairingUnverified':
-    'GPUStack は、Prefill と Decode の一部の設定がペアリング要件を満たしているか確認できませんでした。よくあるのは、一方のロールでペアリングパラメーターの値を明示的に指定し、もう一方ではエンジンの既定値を使用する場合（--max-model-len、--block-size、--kv-cache-layout など）や、値の選択をエンジンに任せる場合（例として、一方で --dtype=auto、もう一方で --dtype=float16 を指定）です。\n\nデプロイは続行できます。上記の場合は、GPUStack が検証できるように、両方のロールで該当パラメーターに具体的な値を明示的に設定してください。',
+    '曙光算力调度平台 は、Prefill と Decode の一部の設定がペアリング要件を満たしているか確認できませんでした。よくあるのは、一方のロールでペアリングパラメーターの値を明示的に指定し、もう一方ではエンジンの既定値を使用する場合（--max-model-len、--block-size、--kv-cache-layout など）や、値の選択をエンジンに任せる場合（例として、一方で --dtype=auto、もう一方で --dtype=float16 を指定）です。\n\nデプロイは続行できます。上記の場合は、曙光算力调度平台 が検証できるように、両方のロールで該当パラメーターに具体的な値を明示的に設定してください。',
   'models.pd.degraded.pairingTP':
     'メンバーが実際に取得したカードから再計算した実効テンソル並列度が、この PD レシピの宣言する方向に反しています：NIXL は Decode が Prefill 以上、Ascend Mooncake は Prefill が Decode 以上である必要があります。カードを固定せず --tensor-parallel-size も書かないロールは配置されるまで検査できる数値を持たないため、受け入れ時には検出できません。両方のロールに --tensor-parallel-size を設定するか、レシピが許す枚数を割り当ててください。',
   'models.pd.admission.infeasible':
@@ -687,10 +687,10 @@ export default {
   'models.pd.ratio': '配分',
   'models.form.roles.router.entrypoint': '実行コマンド',
   'models.form.roles.router.connectionArgs':
-    '接続パラメータ（GPUStack が注入）',
+    '接続パラメータ（曙光算力调度平台 が注入）',
   'models.form.roles.managed': 'システム管理',
   'models.form.roles.managed.tips':
-    'PD モードとグループのスケジュール先から GPUStack が自動生成します。読み取り専用で、同じ内容を再度指定する必要はありません。二重波括弧の値はプレースホルダーで、デプロイ時に実際のアドレス・ポート・NIC に置き換わります。',
+    'PD モードとグループのスケジュール先から 曙光算力调度平台 が自動生成します。読み取り専用で、同じ内容を再度指定する必要はありません。二重波括弧の値はプレースホルダーで、デプロイ時に実際のアドレス・ポート・NIC に置き換わります。',
   'models.form.roles.managed.mounts': 'ホストマウント',
   'models.form.roles.managed.locked':
     '鍵付きはシステムが注入する項目で、編集できません',
@@ -698,11 +698,11 @@ export default {
   'models.form.roles.scheduling.managed':
     '上で設定したトポロジ親和性に従ってシステムが自動的に配置します。ノード制約は追加されません',
   'models.form.roles.managed.params.tips':
-    'このロールのエンジンに渡される引数です。鍵付きは PD モードに基づいて GPUStack が注入し、自分で追加したものはその後ろに続きます。',
+    'このロールのエンジンに渡される引数です。鍵付きは PD モードに基づいて 曙光算力调度平台 が注入し、自分で追加したものはその後ろに続きます。',
   'models.form.roles.managed.env.tips':
-    'このロールのコンテナに設定される環境変数です。鍵付きは GPUStack が注入するもので、多くは制御プレーンのアドレスと NIC です。',
+    'このロールのコンテナに設定される環境変数です。鍵付きは 曙光算力调度平台 が注入するもので、多くは制御プレーンのアドレスと NIC です。',
   'models.form.roles.managed.mounts.tips':
-    'ホストからコンテナにバインドマウントされるパスです。追加できるのは GPUStack だけです。転送方式が読む必要のあるホストファイルで、アクセラレータランタイムは自動では取り込みません。',
+    'ホストからコンテナにバインドマウントされるパスです。追加できるのは 曙光算力调度平台 だけです。転送方式が読む必要のあるホストファイルで、アクセラレータランタイムは自動では取り込みません。',
   'models.form.roles.resources': 'リソース',
   'models.form.roles.resources.cpu': 'CPU（コア）',
   'models.form.roles.resources.memory': 'メモリ（GiB）',
@@ -755,14 +755,14 @@ export default {
   'models.form.gather.infeasible.warning':
     '現在の容量ではこのグループは配置できません。保存すると空きが出るまで待機します。選択肢：「できるだけ近く」に変更（ホストをまたぎ、KV 転送が遅くなる）· レプリカ数またはレプリカあたりの GPU 数を減らす',
   'models.pd.membership.dynamic':
-    '動的スケーリングに対応しています。GPUStack は API でルーターのメンバーを更新するため、メンバー変更によるルーターの再構築は不要です。',
+    '動的スケーリングに対応しています。曙光算力调度平台 は API でルーターのメンバーを更新するため、メンバー変更によるルーターの再構築は不要です。',
   'models.pd.membership.restart':
-    '動的なメンバー更新には対応していません。スケーリングやメンバーの復旧・再起動後、GPUStack がルーターを再構築します。一時的にサービスが停止し、処理中のリクエストが失敗する場合があります。',
+    '動的なメンバー更新には対応していません。スケーリングやメンバーの復旧・再起動後、曙光算力调度平台 がルーターを再構築します。一時的にサービスが停止し、処理中のリクエストが失敗する場合があります。',
   'models.pd.membership.manual':
     'このルーターはユーザーが管理します。スケーリングやメンバー変更後は、接続先アドレスとブートストラップのメタデータを更新し、必要に応じてルーターを再起動してください。',
   'models.pd.instance.delete.restart':
-    'メンバー再作成後、GPUStack がルーターを再構築します。一時的にサービスが停止し、処理中のリクエストが失敗する場合があります。',
+    'メンバー再作成後、曙光算力调度平台 がルーターを再構築します。一時的にサービスが停止し、処理中のリクエストが失敗する場合があります。',
   'models.pd.instance.delete.manual':
-    'GPUStack がメンバーを再作成します。ルーターのメンバーアドレスとブートストラップのメタデータを更新し、必要に応じてルーターを再起動してください。',
+    '曙光算力调度平台 がメンバーを再作成します。ルーターのメンバーアドレスとブートストラップのメタデータを更新し、必要に応じてルーターを再起動してください。',
   'models.pd.membership.updating': 'ルーターのメンバーを読み込み中'
 };

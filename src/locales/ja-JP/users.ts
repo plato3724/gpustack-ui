@@ -40,12 +40,12 @@ export default {
   'users.password.confirm.empty': '新しいパスワードを確認してください。',
   'users.password.confirm.error': '入力された2つのパスワードが一致しません。',
   'users.login.title': 'ログイン',
-  'users.version.islatest': 'GPUStack {version} は最新バージョンです',
-  'users.version.update': 'GPUStack {version} が利用可能です',
+  'users.version.islatest': '曙光算力调度平台 {version} は最新バージョンです',
+  'users.version.update': '曙光算力调度平台 {version} が利用可能です',
   'users.settings.title': 'ユーザー設定',
   'users.status.activate': 'アカウントを有効化',
   'users.status.deactivate': 'アカウントを無効化',
   'users.status.inactiveAccount': '無効なアカウント',
   'users.login.getInitialPassword':
-    'GPUStack Server で次のコマンドを実行し、管理者の初期パスワードを取得してください。'
+    '曙光算力调度平台 Server で次のコマンドを実行し、管理者の初期パスワードを取得してください。'
 };

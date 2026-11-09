@@ -1,5 +1,5 @@
-import LogoIcon from '@/assets/images/gpustack-logo.png';
 import { userAtom } from '@/atoms/user';
+import { PRODUCT_NAME } from '@/constants/product';
 import { history, useIntl, useModel } from '@umijs/max';
 import { Button, Divider, Form, Spin, message } from 'antd';
 import { createStyles } from 'antd-style';
@@ -104,11 +104,9 @@ const LoginForm = () => {
           <span className="text">
             {intl?.formatMessage({ id: 'users.login.title' })}
           </span>
-          <img
-            src={LogoIcon}
-            alt="logo"
-            style={{ height: '36px', marginLeft: 10 }}
-          />
+          <span className="text" style={{ marginLeft: 10, fontWeight: 600 }}>
+            {PRODUCT_NAME}
+          </span>
         </div>
       </div>
     );

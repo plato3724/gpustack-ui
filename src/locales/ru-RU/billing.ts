@@ -1,7 +1,7 @@
 export default {
-  'billing.upsell.title': 'Управление оплатой доступно в GPUStack Enterprise',
+  'billing.upsell.title': 'Управление оплатой доступно в 曙光算力调度平台 Enterprise',
   'billing.upsell.subtitle':
-    'Отслеживайте расходы, создавайте счета и контролируйте бюджеты команд. Перейдите на GPUStack Enterprise, чтобы управлять оплатой.',
+    'Отслеживайте расходы, создавайте счета и контролируйте бюджеты команд. Перейдите на 曙光算力调度平台 Enterprise, чтобы управлять оплатой.',
   'billing.upsell.featuresTitle': 'Возможности Enterprise',
   'billing.upsell.feature.usage':
     'Просмотр расходов по организациям, пользователям и моделям',

@@ -40,12 +40,12 @@ export default {
   'users.password.confirm.empty': 'Подтвердите новый пароль',
   'users.password.confirm.error': 'Пароли не совпадают',
   'users.login.title': 'Вход в',
-  'users.version.islatest': 'GPUStack {version} — последняя версия',
-  'users.version.update': 'Доступно обновление GPUStack {version}',
+  'users.version.islatest': '曙光算力调度平台 {version} — последняя версия',
+  'users.version.update': 'Доступно обновление 曙光算力调度平台 {version}',
   'users.settings.title': 'Настройки пользователя',
   'users.status.activate': 'Активировать аккаунт',
   'users.status.deactivate': 'Деактивировать аккаунт',
   'users.status.inactiveAccount': 'Неактивный аккаунт',
   'users.login.getInitialPassword':
-    'Выполните следующую команду на вашем GPUStack Server, чтобы получить начальный пароль администратора.'
+    'Выполните следующую команду на вашем 曙光算力调度平台 Server, чтобы получить начальный пароль администратора.'
 };
